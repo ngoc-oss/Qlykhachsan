@@ -1,0 +1,1161 @@
+[
+  {
+    "id": "policy_checkin_001",
+    "category": "chinh-sach",
+    "tags": [
+      "check-in",
+      "nhận phòng",
+      "giờ vào phòng",
+      "sớm",
+      "early"
+    ],
+    "title": "Chính sách Check-in",
+    "content": "Giờ check-in tiêu chuẩn tại Grand Palace Hotel là 14:00 (2 giờ chiều). Khách có thể yêu cầu early check-in từ 10:00 tùy theo phòng trống (phụ phí 50% giá phòng/đêm). Nếu đặt phòng từ hôm trước và phòng đã sẵn sàng, khách được check-in miễn phụ phí. Khách cần xuất trình CMND/Hộ chiếu và thẻ tín dụng hoặc đặt cọc tiền mặt tối thiểu 500.000 VNĐ. Khách VIP và Kim Cương được ưu tiên check-in không cần chờ đợi."
+  },
+  {
+    "id": "policy_checkout_001",
+    "category": "chinh-sach",
+    "tags": [
+      "check-out",
+      "trả phòng",
+      "giờ trả phòng",
+      "muộn",
+      "late checkout"
+    ],
+    "title": "Chính sách Check-out",
+    "content": "Giờ check-out tiêu chuẩn là 12:00 (12 giờ trưa). Late check-out có thể được chấp thuận theo yêu cầu: đến 14:00 miễn phí (tùy phòng trống), từ 14:00-18:00 phụ phí 50% giá phòng/đêm, sau 18:00 tính thêm 1 đêm đầy đủ. Khách VIP và Kim Cương được late check-out đến 14:00 miễn phí. Khách cần thông báo muộn nhất lúc 09:00 cùng ngày nếu muốn late check-out."
+  },
+  {
+    "id": "policy_cancel_001",
+    "category": "chinh-sach",
+    "tags": [
+      "hủy phòng",
+      "hoàn tiền",
+      "cancel",
+      "refund",
+      "hủy đặt",
+      "hủy trước 12 tiếng",
+      "12 tiếng",
+      "tỷ lệ hoàn tiền",
+      "hoàn tiền bao nhiêu"
+    ],
+    "title": "Chính sách hủy đặt phòng và hoàn tiền",
+    "content": "Chính sách hủy phòng Grand Palace: (1) Hủy trước 48 giờ so với giờ check-in: hoàn tiền 100%, không phí. (2) Hủy trong vòng 24-48 giờ: hoàn tiền 50% tổng tiền đặt phòng. (3) Hủy trong vòng 24 giờ (bao gồm hủy trước 12 tiếng, 6 tiếng...) hoặc không đến (no-show): hoàn tiền 0% (KHÔNG hoàn tiền, tính phí 1 đêm đầu tiên hoặc toàn bộ tiền cọc). (4) Trường hợp đặc biệt (thiên tai, bệnh tật có giấy tờ chứng minh): hoàn tiền 100% hoặc đổi ngày miễn phí. Thời gian hoàn tiền từ 5-7 ngày làm việc."
+  },
+  {
+    "id": "policy_pet_001",
+    "category": "chinh-sach",
+    "tags": [
+      "thú cưng",
+      "vật nuôi",
+      "chó mèo",
+      "pet",
+      "động vật"
+    ],
+    "title": "Quy định mang thú cưng",
+    "content": "Grand Palace Hotel TUYỆT ĐỐI KHÔNG cho phép mang thú cưng và động vật nuôi vào khu vực khách sạn (phòng ngủ, sảnh, nhà hàng, hồ bơi). Quy định này áp dụng nghiêm ngặt với mọi loại thú cưng và vật nuôi (bao gồm chó, mèo, chim và tất cả các loài động vật khác), không phân biệt kích cỡ lớn hay nhỏ, kể cả khi nhốt trong lồng. Lý do: đảm bảo vệ sinh và tránh dị ứng cho khách hàng. Khách vi phạm sẽ bị yêu cầu gửi thú nuôi ra ngoài và chịu phí vệ sinh khử trùng phòng 500.000 VNĐ. Ngoại lệ duy nhất: chó dẫn đường cho người khiếm thị (cần thông báo trước)."
+  },
+  {
+    "id": "policy_smoking_001",
+    "category": "chinh-sach",
+    "tags": [
+      "hút thuốc",
+      "smoking",
+      "thuốc lá",
+      "cấm hút",
+      "vape",
+      "thuốc lá điện tử",
+      "pod",
+      "iqos",
+      "shisha"
+    ],
+    "title": "Quy định hút thuốc",
+    "content": "Grand Palace là khách sạn không hút thuốc (Non-smoking hotel). Cấm hút thuốc lá truyền thống và TUYỆT ĐỐI CẤM hút thuốc lá điện tử (Vape, Pod, IQOS, shisha) trong toàn bộ phòng ngủ, hành lang, thang máy, nhà hàng và khu vực trong nhà. Khách sạn KHÔNG có phòng nào cho phép hút vape bên trong. Khu vực hút thuốc cho phép duy nhất: ban công thoáng khí (nếu phòng có ban công) và khu vực ngoài trời được chỉ định tại tầng 1 (sân vườn). Khách hút thuốc hoặc hút vape trong phòng sẽ bị phạt vệ sinh khử mùi 1.000.000 VNĐ."
+  },
+  {
+    "id": "policy_payment_001",
+    "category": "chinh-sach",
+    "tags": [
+      "thanh toán",
+      "payment",
+      "tiền mặt",
+      "thẻ",
+      "chuyển khoản"
+    ],
+    "title": "Phương thức thanh toán",
+    "content": "Grand Palace chấp nhận các phương thức thanh toán: Tiền mặt VNĐ, Thẻ Visa/Mastercard/JCB, Chuyển khoản ngân hàng, VNPay/MoMo/ZaloPay. Không chấp nhận ngoại tệ trực tiếp (có thể đổi tiền tại lễ tân theo tỷ giá thị trường). Hóa đơn VAT xuất trong ngày check-out, cần thông báo trước nếu muốn xuất theo tên công ty."
+  },
+  {
+    "id": "process_damage_001",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "làm hỏng",
+      "hư hỏng",
+      "đền bù",
+      "TV hỏng",
+      "tài sản",
+      "damage",
+      "bồi thường"
+    ],
+    "title": "Quy trình xử lý khi khách làm hỏng tài sản",
+    "content": "Quy trình xử lý tài sản hư hỏng: BƯỚC 1 — Nhân viên phát hiện hoặc khách báo hư hỏng, ghi chép ngay vào biên bản hư hỏng (form F-07), chụp ảnh hiện trạng. BƯỚC 2 — Báo cáo Quản lý ca trực ngay lập tức. BƯỚC 3 — Quản lý liên hệ khách để thông báo và thương lượng. BƯỚC 4 — Bộ phận kỹ thuật định giá thiệt hại trong vòng 30 phút. Biểu phí chuẩn: TV phòng Đơn/Đôi: 5-8 triệu VNĐ, TV phòng VIP: 12-15 triệu VNĐ, TV phòng Suite: 25-30 triệu VNĐ, Điều hòa: 10-20 triệu VNĐ, Bồn tắm/Jacuzzi: 15-40 triệu VNĐ. BƯỚC 5 — Thu phí hoặc giữ đặt cọc trước khi check-out. BƯỚC 6 — Lưu hồ sơ vào hệ thống và báo cáo Ban giám đốc cuối tuần."
+  },
+  {
+    "id": "process_lost_item_001",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "mất đồ",
+      "thất lạc",
+      "đồ bỏ quên",
+      "lost and found",
+      "tìm đồ"
+    ],
+    "title": "Quy trình xử lý đồ vật thất lạc / bỏ quên",
+    "content": "Quy trình Lost & Found: BƯỚC 1 — Khi tìm thấy đồ vật, nhân viên ghi vào sổ Lost & Found: mô tả vật, nơi tìm, thời gian, tên nhân viên. BƯỚC 2 — Đồ vật được lưu tại két an toàn hoặc tủ khóa riêng tại lễ tân. BƯỚC 3 — Kiểm tra hệ thống xem có khách nào vừa check-out từ phòng đó. BƯỚC 4 — Liên hệ khách nếu tìm được thông tin. BƯỚC 5 — Lưu giữ tối đa 90 ngày. Đồ vật có giá trị cao (laptop, điện thoại, nữ trang) lưu két sắt và báo cáo Ban quản lý. BƯỚC 6 — Sau 90 ngày không có người nhận, xử lý theo quy định nội bộ."
+  },
+  {
+    "id": "process_complaint_001",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "khiếu nại",
+      "phàn nàn",
+      "complaint",
+      "không hài lòng",
+      "xử lý sự cố"
+    ],
+    "title": "Quy trình xử lý khiếu nại và phàn nàn của khách",
+    "content": "Quy trình xử lý khiếu nại 5 bước: BƯỚC 1 — LẮNG NGHE: Để khách nói hết, không ngắt lời, ghi chép đầy đủ nội dung phàn nàn. BƯỚC 2 — XIN LỖI CHÂN THÀNH: Đại diện khách sạn xin lỗi dù lỗi thuộc bên nào. BƯỚC 3 — ĐỀ XUẤT GIẢI PHÁP: Đưa ra 2-3 phương án giải quyết, để khách lựa chọn (miễn phí bữa ăn, giảm giá phòng, nâng cấp phòng...). BƯỚC 4 — THỰC HIỆN NGAY: Xử lý trong vòng 15 phút đối với vấn đề nhỏ, 1 giờ với vấn đề lớn. BƯỚC 5 — FOLLOW UP: Gọi điện hoặc gặp mặt khách sau 2 giờ để xác nhận sự hài lòng. Ghi chép vào hệ thống CRM."
+  },
+  {
+    "id": "process_vip_001",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "VIP",
+      "khách VIP",
+      "đón tiếp VIP",
+      "phòng VIP",
+      "kim cương"
+    ],
+    "title": "Quy trình đón tiếp khách VIP và Kim Cương",
+    "content": "Quy trình đặc biệt cho khách hạng Vàng, VIP và Kim Cương: TRƯỚC KHI ĐẾN — Kiểm tra sở thích đặc biệt trong hồ sơ khách, chuẩn bị phòng theo yêu cầu (hoa quả, bánh welcome, nhiệt độ phòng). KHAI THÁC THÔNG TIN — Xem lịch sử ở: số lần ở, phòng thường chọn, ghi chú đặc biệt. ĐÓN TIẾP — Quản lý ca hoặc lễ tân trưởng đón trực tiếp, không để khách xếp hàng. TRONG THỜI GIAN Ở — Check-in/out ưu tiên, không cần xếp hàng, có thể gọi dịch vụ 24/7, miễn phí nâng cấp phòng nếu có. SAU KHI Ở — Gửi email/SMS cảm ơn trong 24h, tặng điểm thành viên."
+  },
+  {
+    "id": "process_emergency_001",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "khẩn cấp",
+      "cháy nổ",
+      "cứu thương",
+      "emergency",
+      "tai nạn",
+      "y tế"
+    ],
+    "title": "Quy trình xử lý khẩn cấp",
+    "content": "Trong trường hợp khẩn cấp: HỎA HOẠN — Kéo chuông báo cháy, gọi 114, không dùng thang máy, dẫn khách theo cầu thang thoát hiểm. Y TẾ/TAI NẠN — Gọi cấp cứu 115, sơ cứu cơ bản, báo cáo Quản lý ngay, không tự ý di chuyển nạn nhân. AN NINH — Gọi 113, không đối đầu với kẻ gian, giữ bình tĩnh. Số điện thoại khẩn cấp nội bộ: Quản lý ca: ext.100, Bảo vệ: ext.101, Kỹ thuật: ext.102, Y tế: ext.103."
+  },
+  {
+    "id": "service_room_001",
+    "category": "dich-vu",
+    "tags": [
+      "dịch vụ phòng",
+      "room service",
+      "ăn uống phòng",
+      "order",
+      "đặt đồ ăn"
+    ],
+    "title": "Dịch vụ phòng (Room Service)",
+    "content": "Dịch vụ phòng Grand Palace hoạt động 24/7. Gọi ext.200 để đặt. Menu đầy đủ trong sổ hướng dẫn phòng. Thời gian phục vụ: bữa sáng (06:00-10:00): 20-30 phút, ban ngày (10:00-22:00): 20-30 phút, đêm khuya (22:00-06:00): 30-45 phút. Phụ phí giao phòng: 20.000 VNĐ/lần (miễn phí cho khách VIP và Kim Cương). Thực đơn nổi bật: Phở bò 95.000đ, Cơm chiên hải sản 120.000đ, Sandwich 75.000đ, Trái cây tươi 85.000đ. Có thực đơn chay và không gluten theo yêu cầu."
+  },
+  {
+    "id": "service_spa_001",
+    "category": "dich-vu",
+    "tags": [
+      "spa",
+      "massage",
+      "chăm sóc",
+      "làm đẹp",
+      "thư giãn"
+    ],
+    "title": "Dịch vụ Spa & Wellness",
+    "content": "Grand Palace Spa mở cửa 08:00-22:00 hàng ngày. Các dịch vụ: Massage thư giãn toàn thân 60 phút: 450.000đ, 90 phút: 620.000đ. Massage đá nóng 90 phút: 750.000đ. Chăm sóc da mặt: 350.000-500.000đ. Gói cặp đôi 120 phút: 1.200.000đ. Đặt lịch trước ít nhất 2 giờ qua ext.205 hoặc nhờ lễ tân. Khách hạng Vàng và Kim Cương được giảm 15% tất cả dịch vụ spa. Gói ưu đãi ngày lễ và cuối tuần có giảm thêm 10%."
+  },
+  {
+    "id": "service_pool_001",
+    "category": "dich-vu",
+    "tags": [
+      "hồ bơi",
+      "bể bơi",
+      "swimming pool",
+      "gym",
+      "thể thao"
+    ],
+    "title": "Hồ bơi và Phòng tập Gym",
+    "content": "Hồ bơi ngoài trời tầng 2 mở cửa 06:00-21:00. Hồ bơi trong nhà (heated) mở cửa 06:00-22:00. Phòng tập Gym tầng 2 mở cửa 05:30-23:00. Tất cả đều miễn phí cho khách đang lưu trú. Khăn tắm được cung cấp miễn phí. Quy định: không mặc đồ cotton vào hồ bơi, trẻ em dưới 12 tuổi phải có người lớn đi kèm, không mang thức ăn/đồ uống vào hồ bơi (chỉ nước lọc). Dụng cụ bơi cho thuê tại quầy: 30.000đ/bộ."
+  },
+  {
+    "id": "service_laundry_001",
+    "category": "dich-vu",
+    "tags": [
+      "giặt đồ",
+      "laundry",
+      "ủi quần áo",
+      "giặt là"
+    ],
+    "title": "Dịch vụ Giặt là",
+    "content": "Dịch vụ giặt là Grand Palace: Giặt thường (trả trong 24h): áo sơ mi 35.000đ, quần 45.000đ, váy 55.000đ, suit 120.000đ. Giặt nhanh (4 giờ, phụ phí 50%): giao trước 10:00 nhận lại trước 14:00. Ủi express (2 giờ): 25.000đ/món. Gửi đồ để giặt vào túi laundry trong phòng, điền phiếu và để trước cửa phòng trước 09:00. Khách hạng Kim Cương được giặt 3 món/ngày miễn phí. Không nhận giặt đồ da, lụa cổ điển, đồ ren繊细 cần xử lý đặc biệt."
+  },
+  {
+    "id": "service_breakfast_001",
+    "category": "dich-vu",
+    "tags": [
+      "bữa sáng",
+      "ăn sáng",
+      "breakfast",
+      "buffet",
+      "nhà hàng"
+    ],
+    "title": "Dịch vụ ăn sáng và Nhà hàng",
+    "content": "Nhà hàng Grand Palace tầng 1 phục vụ: Buffet sáng 06:30-10:00 (300.000đ/người, trẻ em dưới 5 tuổi miễn phí, 6-12 tuổi 50%). Nhiều gói phòng đã bao gồm bữa sáng (kiểm tra tại phiếu đặt phòng). Trưa và tối phục vụ À la carte 11:00-14:00 và 17:30-22:00. Menu đặc sản Thái Nguyên: Gà đồi nướng, chè Thái Nguyên, bánh coong phù. Nhà hàng có thể đặt bàn riêng cho nhóm từ 10 người. Khách VIP và Kim Cương được giảm 10% hóa đơn nhà hàng."
+  },
+  {
+    "id": "service_transport_001",
+    "category": "dich-vu",
+    "tags": [
+      "đưa đón",
+      "taxi",
+      "xe khách sạn",
+      "sân bay",
+      "transport",
+      "đặt xe"
+    ],
+    "title": "Dịch vụ đưa đón và vận chuyển",
+    "content": "Grand Palace cung cấp dịch vụ đưa đón: Đón sân bay Nội Bài đi Thái Nguyên: xe 4 chỗ 650.000đ, xe 7 chỗ 850.000đ. Đặt xe trong thành phố: 150.000đ/giờ đầu, 100.000đ/giờ tiếp theo. Thuê xe cả ngày (8 tiếng): xe 4 chỗ 800.000đ, xe 7 chỗ 1.100.000đ. Đặt xe trước ít nhất 2 giờ qua ext.201 hoặc lễ tân. Có hợp tác với Grab và Be nếu cần xe ngay. Khách hạng Kim Cương được đưa đón sân bay 1 lần miễn phí mỗi chuyến."
+  },
+  {
+    "id": "tour_thainguyen_001",
+    "category": "tour-du-lich",
+    "tags": [
+      "tour",
+      "du lịch",
+      "địa điểm",
+      "tham quan",
+      "Thái Nguyên",
+      "chè"
+    ],
+    "title": "Tour tham quan Thái Nguyên — Vùng chè nổi tiếng",
+    "content": "Tour 1 ngày khám phá vùng chè Thái Nguyên (khởi hành 07:00, về 17:00): Tham quan đồi chè Tân Cương — vùng chè ngon nhất Việt Nam, thưởng thức chè tươi ngay tại vườn, mua chè đặc sản về làm quà. Giá: 450.000đ/người (đã bao gồm: xe, hướng dẫn viên, ăn trưa, thưởng thức chè). Trẻ em dưới 12 tuổi: 250.000đ. Đặt trước ít nhất 1 ngày. Khởi hành từ khách sạn. Đặt tour qua lễ tân ext.203."
+  },
+  {
+    "id": "tour_atk_001",
+    "category": "tour-du-lich",
+    "tags": [
+      "tour",
+      "ATK",
+      "lịch sử",
+      "Định Hóa",
+      "Việt Bắc",
+      "chiến khu"
+    ],
+    "title": "Tour ATK Định Hóa — Di tích lịch sử",
+    "content": "Tour di tích lịch sử ATK Định Hóa — Thủ đô kháng chiến thời chống Pháp (khởi hành 08:00, về 18:00): Thăm khu di tích ATK Định Hóa, bảo tàng, các địa điểm Bác Hồ và Bộ Chính trị từng sống và làm việc trong kháng chiến. Giá: 520.000đ/người (xe + hướng dẫn + ăn trưa). Phù hợp cho: du khách yêu lịch sử, gia đình, học sinh. Đặt trước ít nhất 1 ngày. Đặt tour qua lễ tân ext.203."
+  },
+  {
+    "id": "tour_hobanbe_001",
+    "category": "tour-du-lich",
+    "tags": [
+      "tour",
+      "hồ Núi Cốc",
+      "Núi Cốc",
+      "hồ",
+      "picnic",
+      "thiên nhiên"
+    ],
+    "title": "Tour Hồ Núi Cốc — Thiên nhiên thơ mộng",
+    "content": "Tour Hồ Núi Cốc — Điểm du lịch nổi tiếng nhất Thái Nguyên (nửa ngày, khởi hành 08:00 hoặc 13:00): Tham quan hồ Núi Cốc rộng 2.500 ha, đi thuyền ngắm cảnh, tham quan đảo Chàng Nàng, ăn hải sản hồ. Giá: 320.000đ/người (nửa ngày). Tour cả ngày với picnic: 580.000đ/người. Phù hợp cho gia đình, cặp đôi, nhóm bạn. Đặt tour qua lễ tân ext.203."
+  },
+  {
+    "id": "membership_001",
+    "category": "thanh-vien",
+    "tags": [
+      "thành viên",
+      "hạng",
+      "điểm",
+      "ưu đãi",
+      "loyalty",
+      "Bạc",
+      "Vàng",
+      "Kim cương"
+    ],
+    "title": "Chương trình thành viên Grand Palace",
+    "content": "Chương trình thành viên Grand Palace 4 hạng: (1) THÀNH VIÊN MỚI: Mặc định khi đăng ký, tích điểm 1đ/10.000đ chi tiêu. (2) HẠNG BẠC: Từ 5 lần ở hoặc 10 triệu chi tiêu, tích điểm 1.2đ/10.000đ, giảm 5% spa. (3) HẠNG VÀNG: Từ 10 lần ở hoặc 20 triệu chi tiêu, tích điểm 1.5đ/10.000đ, giảm 10% nhà hàng, 15% spa, late checkout đến 14:00 miễn phí, welcome drink. (4) HẠNG KIM CƯƠNG: Từ 20 lần ở hoặc 50 triệu chi tiêu, tích điểm 2đ/10.000đ, giảm 15% nhà hàng, 20% spa, đưa đón sân bay 1 lần/chuyến miễn phí, giặt 3 món/ngày miễn phí, nâng cấp phòng miễn phí nếu có. Điểm có thể dùng để thanh toán (1.000 điểm = 10.000đ)."
+  },
+  {
+    "id": "wifi_001",
+    "category": "dich-vu",
+    "tags": [
+      "wifi",
+      "internet",
+      "mạng",
+      "kết nối"
+    ],
+    "title": "Dịch vụ WiFi",
+    "content": "WiFi miễn phí tốc độ cao toàn khách sạn. Tên mạng: GrandPalace_Guest. Mật khẩu: lấy tại lễ tân khi check-in (thay đổi mỗi ngày). Tốc độ: 100 Mbps đối xứng. Hỗ trợ đến 5 thiết bị đồng thời/phòng. Có WiFi riêng cho phòng họp và sự kiện (cần đăng ký trước). Gặp sự cố kết nối: gọi ext.102 (IT support)."
+  },
+  {
+    "id": "parking_001",
+    "category": "dich-vu",
+    "tags": [
+      "bãi đỗ xe",
+      "parking",
+      "xe máy",
+      "ô tô",
+      "gửi xe"
+    ],
+    "title": "Dịch vụ bãi đỗ xe",
+    "content": "Bãi đỗ xe Grand Palace: Xe máy: 20.000đ/ngày đêm. Ô tô dưới 4 chỗ: 60.000đ/ngày đêm. Ô tô 7 chỗ: 80.000đ/ngày đêm. Xe tải nhỏ: 100.000đ/ngày đêm. Bãi đỗ có mái che, camera an ninh 24/7, bảo vệ túc trực. Khách hạng Kim Cương: miễn phí gửi ô tô. Vào bãi xe: xuất trình thẻ phòng tại chốt bảo vệ."
+  },
+  {
+    "id": "room_types_001",
+    "category": "phong",
+    "tags": [
+      "loại phòng",
+      "phòng đơn",
+      "phòng đôi",
+      "VIP",
+      "Suite",
+      "giá phòng"
+    ],
+    "title": "Các loại phòng và giá",
+    "content": "Grand Palace có 4 loại phòng: (1) PHÒNG ĐƠN (Don): 600.000 - 700.000đ/đêm. 1 giường đơn, diện tích 20m², tiện nghi cơ bản, TV, điều hòa, minibar. (2) PHÒNG ĐÔI (Doi): 900.000 - 950.000đ/đêm. 2 giường đơn hoặc 1 giường King, 25m², view thành phố hoặc nội ô. (3) PHÒNG VIP: 1.500.000 - 1.600.000đ/đêm. 35m², giường King size, bồn tắm, minibar đầy đủ, view toàn cảnh, welcome fruit. (4) PHÒNG SUITE: 3.500.000đ/đêm. 65m², phòng khách riêng, 2 phòng tắm, jacuzzi, ban công, butler service, rượu chào mừng. Tất cả phòng đều có: WiFi miễn phí, điều hòa, TV 4K, két sắt, máy pha cà phê."
+  },
+  {
+    "id": "checkin_procedure_001",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "quy trình check-in",
+      "nhận phòng",
+      "lễ tân",
+      "thủ tục"
+    ],
+    "title": "Quy trình check-in cho nhân viên lễ tân",
+    "content": "Quy trình check-in chuẩn: BƯỚC 1 — Chào khách, hỏi tên và xác nhận đặt phòng trong hệ thống. BƯỚC 2 — Yêu cầu CMND/Hộ chiếu, scan/chụp ảnh lưu hồ sơ. BƯỚC 3 — Yêu cầu thanh toán hoặc đặt cọc (thẻ tín dụng block tạm 500.000đ hoặc tiền mặt). BƯỚC 4 — Xác nhận thông tin phòng, số đêm, ngày checkout. BƯỚC 5 — Trao chìa khóa (hoặc thẻ từ) và hướng dẫn: WiFi, dịch vụ, số nội bộ. BƯỚC 6 — Nếu khách là VIP/Kim Cương: thông báo ngay cho quản lý ca. BƯỚC 7 — Cập nhật trạng thái phòng trong hệ thống: 'trong' → 'dang-o'."
+  },
+  {
+    "id": "checkout_procedure_001",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "quy trình check-out",
+      "trả phòng",
+      "thanh toán cuối",
+      "folio"
+    ],
+    "title": "Quy trình check-out cho nhân viên lễ tân",
+    "content": "Quy trình check-out chuẩn: BƯỚC 1 — Khách thông báo trả phòng, nhân viên xác nhận thông tin. BƯỚC 2 — Gọi buồng phòng kiểm tra phòng (5-10 phút). BƯỚC 3 — In hóa đơn tổng hợp (room + minibar + dịch vụ phát sinh). BƯỚC 4 — Giải thích chi tiết hóa đơn cho khách nếu có thắc mắc. BƯỚC 5 — Thu tiền hoặc giải phóng block thẻ tín dụng, tính phí phát sinh. BƯỚC 6 — Thu chìa khóa/thẻ từ, xuất hóa đơn VAT nếu yêu cầu. BƯỚC 7 — Cập nhật hệ thống: trạng thái phòng → 'don-dep', trạng thái đặt phòng → 'da-tra'. BƯỚC 8 — Hỏi đánh giá chất lượng dịch vụ, mời khách quay lại."
+  },
+  {
+    "id": "minibar_001",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "minibar",
+      "tủ lạnh mini",
+      "đồ uống",
+      "kiểm kê",
+      "tính phí"
+    ],
+    "title": "Quy trình kiểm kê và tính phí Minibar",
+    "content": "Quy trình minibar: NHÂN VIÊN BUỒNG PHÒNG kiểm tra minibar mỗi ngày lúc 09:00-11:00 khi dọn phòng. Ghi chép các mặt hàng đã dùng vào phiếu minibar. Báo lễ tân để cập nhật vào hóa đơn. Biểu giá minibar chuẩn: Nước lọc 0.5L: 20.000đ, Nước ngọt/bia: 45.000đ, Rượu vang mini: 120.000đ, Snack/bánh kẹo: 35.000đ, Cà phê gói: 25.000đ. Khách VIP và Suite: minibar được bổ sung miễn phí 1 lần/ngày (nước lọc, nước ngọt, snack cơ bản). QUAN TRỌNG: Không ghi nhận nếu khách không dùng — sẽ bị xem là gian lận."
+  },
+  {
+    "id": "gen_chinh-sach_late-checkout",
+    "category": "chinh-sach",
+    "tags": [
+      "checkout",
+      "late",
+      "policy",
+      "guest_service"
+    ],
+    "title": "Chính sách Trả phòng muộn",
+    "content": "Giờ trả phòng tiêu chuẩn là 12:00 trưa. Khách có thể yêu cầu trả phòng muộn tùy thuộc vào tình trạng phòng trống và mức hạng thành viên, có thể áp dụng phụ phí. Yêu cầu trả phòng muộn đến 15:00 sẽ được miễn phí nếu phòng còn trống, sau 15:00 sẽ tính 50% giá phòng một đêm, và 100% nếu trả phòng sau 18:00. Vui lòng thông báo cho lễ tân ít nhất 2 giờ trước giờ trả phòng tiêu chuẩn để được hỗ trợ tốt nhất."
+  },
+  {
+    "id": "gen_chinh-sach_early-check-in",
+    "category": "chinh-sach",
+    "tags": [
+      "checkin",
+      "early",
+      "policy",
+      "guest_service"
+    ],
+    "title": "Chính sách Nhận phòng sớm",
+    "content": "Giờ nhận phòng tiêu chuẩn là 15:00 chiều. Khách có thể yêu cầu nhận phòng sớm tùy thuộc vào tình trạng phòng trống tại thời điểm đến, và có thể áp dụng phụ phí. Nhận phòng trước 10:00 sáng sẽ tính 100% giá phòng đêm trước đó, từ 10:00 đến 15:00 sẽ tính 50% giá phòng. Trong trường hợp phòng chưa sẵn sàng, quý khách có thể gửi hành lý và thư giãn tại sảnh chờ hoặc các khu vực tiện ích của khách sạn."
+  },
+  {
+    "id": "gen_chinh-sach_huy-dich-vu",
+    "category": "chinh-sach",
+    "tags": [
+      "cancellation",
+      "policy",
+      "booking",
+      "refund"
+    ],
+    "title": "Chính sách Hủy dịch vụ và Hoàn tiền",
+    "content": "Các đặt phòng tiêu chuẩn có thể hủy miễn phí nếu thông báo trước 24 giờ so với giờ nhận phòng đã đặt. Hủy đặt phòng trong vòng 24 giờ hoặc không đến nhận phòng (no-show) sẽ bị tính phí một đêm nghỉ đầy đủ. Đối với các gói ưu đãi không hoàn hủy hoặc đặt phòng nhóm, chính sách hủy cụ thể sẽ được nêu rõ trong điều khoản đặt chỗ. Vui lòng liên hệ bộ phận đặt phòng để biết chi tiết và được hỗ trợ."
+  },
+  {
+    "id": "gen_chinh-sach_quy-dinh-minibar",
+    "category": "chinh-sach",
+    "tags": [
+      "minibar",
+      "in-room_amenities",
+      "billing",
+      "consumption"
+    ],
+    "title": "Quy định sử dụng và thanh toán Minibar",
+    "content": "Minibar trong phòng được trang bị đầy đủ các loại đồ uống và đồ ăn nhẹ cao cấp, với bảng giá niêm yết rõ ràng. Các mặt hàng được sử dụng sẽ được tự động ghi nhận và tính vào hóa đơn phòng của quý khách. Nhân viên khách sạn sẽ kiểm tra và bổ sung minibar hàng ngày hoặc theo yêu cầu. Mọi thắc mắc về các khoản phí minibar cần được báo cáo cho lễ tân trước khi trả phòng."
+  },
+  {
+    "id": "gen_chinh-sach_quy-dinh-phong-VIP",
+    "category": "chinh-sach",
+    "tags": [
+      "VIP",
+      "room_privileges",
+      "guest_service",
+      "exclusive"
+    ],
+    "title": "Quy định và Đặc quyền Phòng VIP",
+    "content": "Khách lưu trú tại phòng VIP được hưởng các đặc quyền độc quyền như nhận phòng tại quầy riêng, dịch vụ quản gia 24/7, và quyền lui tới Executive Lounge miễn phí. Phòng VIP đi kèm tiện nghi cao cấp, bữa sáng miễn phí và các ưu đãi ẩm thực đặc biệt. Chúng tôi cam kết mang lại trải nghiệm cá nhân hóa và sự riêng tư tuyệt đối cho quý khách VIP. Mọi yêu cầu đặc biệt sẽ được ưu tiên xử lý."
+  },
+  {
+    "id": "gen_chinh-sach_huy-phong",
+    "category": "chinh-sach",
+    "tags": [
+      "huy-phong",
+      "dat-phong",
+      "hoan-tien"
+    ],
+    "title": "Chính sách hủy đặt phòng",
+    "content": "Khách sạn áp dụng chính sách hủy phòng linh hoạt. Khách hàng có thể hủy đặt phòng miễn phí nếu thông báo trước ít nhất 48 giờ so với giờ nhận phòng tiêu chuẩn. Các trường hợp hủy trong vòng 48 giờ sẽ bị tính phí tương đương một đêm lưu trú. Đối với các đặt phòng không hoàn lại, toàn bộ chi phí sẽ được áp dụng."
+  },
+  {
+    "id": "gen_chinh-sach_no-show",
+    "category": "chinh-sach",
+    "tags": [
+      "no-show",
+      "dat-phong",
+      "phi"
+    ],
+    "title": "Chính sách vắng mặt (No-Show)",
+    "content": "Trong trường hợp khách hàng không đến nhận phòng vào ngày đã đặt (no-show), toàn bộ chi phí đêm đầu tiên sẽ được tính vào thẻ tín dụng đã cung cấp. Các đêm tiếp theo của đặt phòng sẽ tự động bị hủy nếu không có thông báo đặc biệt từ khách hàng. Để tránh phát sinh phí, quý khách vui lòng thông báo nếu có sự chậm trễ."
+  },
+  {
+    "id": "gen_chinh-sach_doi-ngay",
+    "category": "chinh-sach",
+    "tags": [
+      "doi-ngay",
+      "dat-phong",
+      "phu-phi"
+    ],
+    "title": "Chính sách thay đổi ngày đặt phòng",
+    "content": "Khách hàng có thể yêu cầu thay đổi ngày đặt phòng miễn phí nếu thông báo trước ít nhất 72 giờ và tùy thuộc vào tình trạng phòng trống. Mọi thay đổi trong vòng 72 giờ có thể phát sinh phí quản lý hoặc chênh lệch giá phòng. Xin lưu ý rằng việc thay đổi ngày có thể dẫn đến việc áp dụng mức giá mới theo thời điểm."
+  },
+  {
+    "id": "gen_chinh-sach_tre-em",
+    "category": "chinh-sach",
+    "tags": [
+      "tre-em",
+      "gia-dinh",
+      "luu-tru"
+    ],
+    "title": "Chính sách lưu trú cho trẻ em",
+    "content": "Trẻ em dưới 6 tuổi được lưu trú miễn phí khi ngủ chung giường với bố mẹ và không yêu cầu thêm giường phụ. Trẻ em từ 6 đến dưới 12 tuổi có thể phát sinh phụ phí nhỏ nếu yêu cầu giường phụ và các bữa ăn. Khách sạn cung cấp nôi em bé miễn phí theo yêu cầu và tùy thuộc vào tình trạng sẵn có."
+  },
+  {
+    "id": "gen_chinh-sach_phu-thu",
+    "category": "chinh-sach",
+    "tags": [
+      "phí",
+      "thanh toán",
+      "dịch vụ",
+      "minh bạch"
+    ],
+    "title": "Quy Định Phụ Thu",
+    "content": "Để đảm bảo sự minh bạch và công bằng, khách sạn áp dụng các khoản phụ thu rõ ràng cho một số dịch vụ đặc biệt hoặc yêu cầu ngoài tiêu chuẩn. Các phụ thu này bao gồm phí nhận phòng sớm/trả phòng muộn, thêm khách lưu trú quá số lượng quy định, hoặc các yêu cầu nâng cấp dịch vụ cụ thể. Mọi khoản phụ thu sẽ được thông báo chi tiết và xác nhận với quý khách tại thời điểm đặt dịch vụ hoặc trước khi phát sinh. Việc thanh toán các khoản phụ thu này là điều kiện để duy trì trải nghiệm dịch vụ cao cấp."
+  },
+  {
+    "id": "gen_chinh-sach_tieng-on",
+    "category": "chinh-sach",
+    "tags": [
+      "yên tĩnh",
+      "trải nghiệm khách hàng",
+      "nghỉ ngơi",
+      "đảm bảo chất lượng"
+    ],
+    "title": "Quy Định Về Tiếng Ồn",
+    "content": "Để duy trì không gian yên bình và thư thái cho tất cả khách lưu trú, khách sạn yêu cầu mọi quý khách tuân thủ quy định về mức độ tiếng ồn hợp lý, đặc biệt trong khoảng thời gian từ 22:00 đến 07:00. Vui lòng giữ âm lượng vừa phải khi sử dụng các thiết bị điện tử và trò chuyện để không làm phiền những khách xung quanh. Bất kỳ sự quấy rầy nghiêm trọng nào sẽ được quản lý khách sạn xử lý kịp thời để đảm bảo trải nghiệm nghỉ dưỡng hoàn hảo cho mọi người. Sự hợp tác của quý khách là chìa khóa để tạo nên một kỳ nghỉ lý tưởng."
+  },
+  {
+    "id": "gen_chinh-sach_khach-ngoai",
+    "category": "chinh-sach",
+    "tags": [
+      "an ninh",
+      "khách vãng lai",
+      "đăng ký",
+      "riêng tư"
+    ],
+    "title": "Quy Định Khách Ngoài Phòng",
+    "content": "Nhằm đảm bảo an ninh và sự riêng tư tối đa cho khách lưu trú, mọi khách ngoài phòng có nhu cầu thăm viếng cần được đăng ký tại quầy lễ tân và có thể bị giới hạn thời gian lưu trú. Khách sạn yêu cầu khách lưu trú chịu trách nhiệm hoàn toàn đối với hành vi của khách thăm viếng của mình trong khuôn viên khách sạn. Đối với trường hợp khách ngoài có ý định lưu trú qua đêm, quý khách vui lòng thông báo trước để khách sạn sắp xếp và áp dụng các khoản phụ phí theo quy định. Việc tuân thủ quy định này giúp chúng tôi duy trì môi trường an toàn và độc quyền."
+  },
+  {
+    "id": "gen_chinh-sach_tai-san-that-lac",
+    "category": "chinh-sach",
+    "tags": [
+      "đồ thất lạc",
+      "tìm kiếm",
+      "trách nhiệm",
+      "tài sản cá nhân"
+    ],
+    "title": "Quy Định Về Tài Sản Thất Lạc",
+    "content": "Khách sạn cam kết nỗ lực tối đa để tìm kiếm và bảo quản các tài sản thất lạc được tìm thấy trong khuôn viên. Mọi vật phẩm thất lạc sẽ được ghi nhận và lưu giữ trong thời gian tối đa 30 ngày, sau đó sẽ được xử lý theo quy định của khách sạn. Khách sạn không chịu trách nhiệm đối với các vật phẩm có giá trị cao không được ký gửi tại két an toàn của lễ tân hoặc trong phòng. Quý khách vui lòng kiểm tra kỹ hành lý và tài sản cá nhân trước khi rời đi để tránh những sự cố đáng tiếc."
+  },
+  {
+    "id": "gen_chinh-sach_bao-mat-thong-tin",
+    "category": "chinh-sach",
+    "tags": [
+      "bảo mật",
+      "thông tin cá nhân",
+      "quyền riêng tư",
+      "dữ liệu khách hàng"
+    ],
+    "title": "Chính sách Bảo mật Thông tin Khách hàng",
+    "content": "Khách sạn cam kết bảo mật tuyệt đối mọi thông tin cá nhân của quý khách, bao gồm dữ liệu đặt phòng, thanh toán và các chi tiết liên lạc khác. Chúng tôi áp dụng các biện pháp bảo mật công nghệ tiên tiến và quy trình kiểm soát nội bộ nghiêm ngặt để ngăn chặn truy cập trái phép, sử dụng sai mục đích hoặc tiết lộ thông tin. Mọi dữ liệu chỉ được sử dụng với mục đích nâng cao trải nghiệm lưu trú và tuân thủ pháp luật, không bao giờ được chia sẻ với bên thứ ba khi chưa có sự đồng ý của quý khách."
+  },
+  {
+    "id": "gen_chinh-sach_dat-coc",
+    "category": "chinh-sach",
+    "tags": [
+      "đặt cọc",
+      "thanh toán",
+      "đảm bảo đặt phòng",
+      "phí hủy"
+    ],
+    "title": "Chính sách Đặt cọc Đảm bảo Đặt phòng",
+    "content": "Để đảm bảo đặt phòng và các dịch vụ đặc biệt, quý khách có thể được yêu cầu đặt cọc một phần hoặc toàn bộ chi phí lưu trú. Khoản đặt cọc này sẽ được thông báo rõ ràng tại thời điểm đặt phòng và có thể được sử dụng để bù đắp các khoản phí phát sinh hoặc thiệt hại trong quá trình lưu trú. Chính sách hoàn trả đặt cọc sẽ tùy thuộc vào điều khoản hủy phòng cụ thể của từng loại hình đặt phòng."
+  },
+  {
+    "id": "gen_chinh-sach_late-checkout_v3",
+    "category": "chinh-sach",
+    "tags": [
+      "check-out muộn",
+      "phụ phí",
+      "linh hoạt",
+      "thời gian trả phòng"
+    ],
+    "title": "Chính sách Check-out Muộn (Late Check-out)",
+    "content": "Giờ trả phòng tiêu chuẩn của khách sạn là 12:00 trưa. Yêu cầu trả phòng muộn được chấp thuận dựa trên tình trạng phòng trống và có thể áp dụng phụ phí. Trả phòng từ 12:00 đến 18:00 có thể tính phí nửa ngày, sau 18:00 sẽ tính phí một đêm đầy đủ. Quý khách vui lòng liên hệ lễ tân để sắp xếp và xác nhận trước."
+  },
+  {
+    "id": "gen_chinh-sach_early-check-in_v3",
+    "category": "chinh-sach",
+    "tags": [
+      "check-in sớm",
+      "phụ phí",
+      "linh hoạt",
+      "thời gian nhận phòng"
+    ],
+    "title": "Chính sách Check-in Sớm (Early Check-in)",
+    "content": "Giờ nhận phòng tiêu chuẩn của khách sạn là 15:00 chiều. Yêu cầu nhận phòng sớm được chấp thuận tùy thuộc vào tình trạng phòng trống tại thời điểm quý khách đến và có thể áp dụng phụ phí. Nhận phòng trước 09:00 sáng có thể tính phí một đêm đầy đủ, từ 09:00 đến 15:00 có thể tính phí nửa ngày. Quý khách vui lòng thông báo trước để chúng tôi có thể sắp xếp tốt nhất."
+  },
+  {
+    "id": "gen_chinh-sach_quy-dinh-minibar_v3",
+    "category": "chinh-sach",
+    "tags": [
+      "minibar",
+      "chinh-sach-khach-hang",
+      "dich-vu-phong"
+    ],
+    "title": "Quy Định Sử Dụng Minibar",
+    "content": "Minibar được trang bị đầy đủ các sản phẩm cao cấp, tuyển chọn kỹ lưỡng, được bổ sung hàng ngày và kiểm tra chất lượng định kỳ. Giá niêm yết rõ ràng trên bảng giá đi kèm, đảm bảo sự minh bạch cho khách hàng. Mọi tiêu thụ sẽ được ghi nhận tự động hoặc qua kiểm tra của nhân viên, và chỉ được tính vào hóa đơn khi khách hàng đồng ý hoặc khi check-out. Chúng tôi cam kết mang đến trải nghiệm tiện nghi và riêng tư tối đa."
+  },
+  {
+    "id": "gen_chinh-sach_quy-dinh-phong-vip",
+    "category": "chinh-sach",
+    "tags": [
+      "phong-vip",
+      "khach-hang-dac-biet",
+      "uu-dai",
+      "dich-vu-ca-nhan"
+    ],
+    "title": "Chính Sách Dành Cho Khách Hàng Phòng VIP",
+    "content": "Khách hàng lưu trú tại phòng VIP được hưởng đặc quyền ưu tiên check-in/check-out, quản gia riêng 24/7 và quyền truy cập vào các tiện ích độc quyền như Executive Lounge. Chúng tôi cung cấp dịch vụ cá nhân hóa cao cấp, từ lựa chọn gối đến thực đơn ẩm thực riêng theo yêu cầu. Mọi yêu cầu của khách VIP sẽ được ưu tiên xử lý nhanh chóng và chu đáo bởi đội ngũ nhân viên chuyên trách. Mục tiêu là mang đến trải nghiệm đẳng cấp, tiện nghi và riêng tư tuyệt đối."
+  },
+  {
+    "id": "gen_quy-trinh-nv_tao-booking",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "booking",
+      "dat-phong",
+      "tiep-tan",
+      "quy-trinh-front-office"
+    ],
+    "title": "Quy Trình Tạo Đặt Phòng Mới",
+    "content": "Khi tạo đặt phòng mới, nhân viên phải xác minh đầy đủ thông tin khách hàng, bao gồm tên, số liên lạc, ngày đến/đi và loại phòng mong muốn. Nhập chính xác mọi chi tiết vào hệ thống quản lý PMS, ghi chú các yêu cầu đặc biệt hoặc sở thích của khách để cá nhân hóa dịch vụ. Xác nhận lại thông tin đặt phòng với khách hàng và gửi email xác nhận ngay lập tức, bao gồm số đặt phòng và các chính sách quan trọng. Đảm bảo mọi bước đều tuân thủ quy trình để tránh sai sót và mang lại trải nghiệm suôn sẻ."
+  },
+  {
+    "id": "gen_quy-trinh-nv_sua-booking",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "booking",
+      "sua-dat-phong",
+      "tiep-tan",
+      "quy-trinh-front-office"
+    ],
+    "title": "Quy Trình Sửa Đổi Đặt Phòng",
+    "content": "Mọi yêu cầu sửa đổi đặt phòng phải được xác minh danh tính khách hàng và số đặt phòng hiện có để đảm bảo tính bảo mật. Nhân viên cần cập nhật chính xác các thay đổi về ngày, loại phòng hoặc dịch vụ bổ sung vào hệ thống PMS. Thông báo rõ ràng về bất kỳ thay đổi nào liên quan đến giá phòng, chính sách hủy hoặc các điều khoản khác có thể phát sinh do việc sửa đổi. Sau khi hoàn tất, gửi lại xác nhận đặt phòng đã sửa đổi cho khách hàng và ghi chú chi tiết trong hồ sơ."
+  },
+  {
+    "id": "gen_quy-trinh-nv_huy-booking",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "hủy đặt phòng",
+      "chính sách hủy",
+      "hoàn tiền",
+      "quản lý đặt phòng"
+    ],
+    "title": "Quy trình Hủy Đặt Phòng",
+    "content": "Khi khách yêu cầu hủy đặt phòng, nhân viên phải xác minh danh tính khách và kiểm tra chính sách hủy áp dụng cho đặt phòng đó. Thông báo rõ ràng về các khoản phí hủy hoặc hoàn tiền theo quy định của khách sạn. Hoàn tất quy trình hủy trên hệ thống, đảm bảo khách nhận được xác nhận và ghi chú chi tiết vào hồ sơ khách hàng để theo dõi."
+  },
+  {
+    "id": "gen_quy-trinh-nv_gia-han",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "gia hạn lưu trú",
+      "quản lý phòng",
+      "giá phòng",
+      "thủ tục"
+    ],
+    "title": "Quy trình Gia Hạn Lưu Trú",
+    "content": "Đối với yêu cầu gia hạn lưu trú, nhân viên cần kiểm tra tình trạng phòng trống và mức giá áp dụng cho khoảng thời gian gia hạn. Cung cấp thông tin rõ ràng về chi phí phát sinh và xác nhận lại với khách trước khi tiến hành cập nhật hệ thống. Đảm bảo toàn bộ thông tin lưu trú mới được phản ánh chính xác trong hồ sơ khách hàng và hệ thống quản lý phòng."
+  },
+  {
+    "id": "gen_quy-trinh-nv_doi-phong",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "đổi phòng",
+      "phòng trống",
+      "dịch vụ khách hàng",
+      "quản lý phòng"
+    ],
+    "title": "Quy trình Đổi Phòng",
+    "content": "Khi khách yêu cầu đổi phòng, nhân viên phải lắng nghe lý do để đề xuất phương án phù hợp nhất, ưu tiên phòng cùng hạng hoặc cao hơn nếu có sẵn. Kiểm tra tình trạng phòng trống và mức giá, sau đó hỗ trợ khách di chuyển hành lý một cách nhanh chóng và kín đáo. Cập nhật ngay lập tức thông tin phòng mới trên hệ thống để đảm bảo chính xác và tránh nhầm lẫn."
+  },
+  {
+    "id": "gen_quy-trinh-nv_nang-hang-phong",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "nâng hạng phòng",
+      "ưu đãi",
+      "khách VIP",
+      "quản lý phòng"
+    ],
+    "title": "Quy trình Nâng Hạng Phòng",
+    "content": "Trong trường hợp khách yêu cầu nâng hạng phòng hoặc khách sạn chủ động nâng hạng (ví dụ: khách VIP, sự cố dịch vụ), nhân viên cần kiểm tra tình trạng phòng trống của hạng phòng cao hơn. Giải thích rõ ràng các tiện ích và lợi ích bổ sung của hạng phòng mới, cùng với mức phụ phí (nếu có). Cập nhật thông tin nâng hạng trên hệ thống và đảm bảo trải nghiệm lưu trú của khách được nâng tầm."
+  },
+  {
+    "id": "gen_quy-trinh-nv_xac-minh-khach",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "check-in",
+      "an-ninh",
+      "xac-thuc",
+      "phap-ly"
+    ],
+    "title": "Quy trình Xác minh Thông tin Khách hàng",
+    "content": "Mọi khách hàng phải xuất trình giấy tờ tùy thân hợp lệ (CMND/CCCD, Hộ chiếu) khi nhận phòng để đảm bảo an ninh và tuân thủ pháp luật. Nhân viên lễ tân phải đối chiếu thông tin trên giấy tờ với chi tiết đặt phòng, xác nhận danh tính và chụp ảnh lưu trữ an toàn theo quy định. Quy trình này không chỉ bảo vệ tài sản và uy tín của khách sạn mà còn đảm bảo sự an toàn và riêng tư tối đa cho tất cả khách lưu trú."
+  },
+  {
+    "id": "gen_quy-trinh-nv_khach-khong-giay-to",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "check-in",
+      "quy-dinh-phap-luat",
+      "xu-ly-tinh-huong",
+      "an-ninh"
+    ],
+    "title": "Xử lý Trường hợp Khách hàng Không có Giấy tờ Tùy thân",
+    "content": "Trong trường hợp khách không xuất trình được giấy tờ tùy thân, nhân viên cần lịch sự giải thích rõ ràng về quy định pháp luật và chính sách của khách sạn. Cần liên hệ ngay với quản lý trực ban để tìm phương án xác minh danh tính thay thế, như thông qua đại diện công ty, email xác nhận chính thức hoặc thông tin bổ sung có thể kiểm chứng. Nếu không thể xác thực danh tính một cách an toàn và hợp lệ, khách sạn có quyền từ chối cung cấp dịch vụ để đảm bảo an ninh chung."
+  },
+  {
+    "id": "gen_quy-trinh-nv_khach-doan",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "check-in",
+      "doan-the",
+      "phuc-vu-dac-biet",
+      "phoi-hop"
+    ],
+    "title": "Quy trình Phục vụ Khách đoàn",
+    "content": "Việc tiếp đón khách đoàn đòi hỏi sự phối hợp chặt chẽ từ trước với trưởng đoàn và các bộ phận liên quan để chuẩn bị chu đáo mọi khía cạnh. Quy trình check-in cần được tối ưu hóa, có thể thực hiện tại khu vực riêng hoặc ngay trên xe để đảm bảo sự thuận tiện và nhanh chóng cho toàn bộ đoàn. Cần chỉ định một nhân viên phụ trách chính để hỗ trợ đoàn xuyên suốt thời gian lưu trú, đảm bảo mọi yêu cầu được đáp ứng kịp thời và chất lượng dịch vụ 5 sao luôn được duy trì xuất sắc."
+  },
+  {
+    "id": "gen_quy-trinh-nv_khach-phan-nan",
+    "category": "quy-trinh-nv",
+    "tags": [
+      "dich-vu-khach-hang",
+      "xu-ly-khieu-nai",
+      "giu-chan-khach",
+      "khac-phuc"
+    ],
+    "title": "Quy trình Xử lý Phàn nàn của Khách hàng",
+    "content": "Khi tiếp nhận phàn nàn, nhân viên phải lắng nghe chân thành, thể hiện sự đồng cảm và xin lỗi một cách chuyên nghiệp, không đổ lỗi. Cần nhanh chóng đánh giá mức độ nghiêm trọng và tìm giải pháp khắc phục ngay lập tức, có thể là đổi phòng, bồi thường nhỏ, hoặc cung cấp dịch vụ bổ sung để xoa dịu khách hàng. Luôn theo dõi để đảm bảo vấn đề được giải quyết triệt để và khách hàng cảm thấy được quan tâm, biến trải nghiệm tiêu cực thành cơ hội để khẳng định đẳng cấp dịch vụ vượt trội."
+  },
+  {
+    "id": "gen_chinh-sach_huy-phong_v3",
+    "category": "chinh-sach",
+    "tags": [
+      "hủy phòng",
+      "đặt phòng",
+      "chính sách"
+    ],
+    "title": "Chính sách Hủy phòng",
+    "content": "Khách sạn áp dụng chính sách hủy phòng linh hoạt nhằm đảm bảo quyền lợi cho khách hàng. Việc hủy phòng trước 48 giờ so với thời gian nhận phòng dự kiến sẽ không phát sinh phí, trừ các gói khuyến mãi đặc biệt không hoàn hủy. Đối với các trường hợp hủy trong vòng 48 giờ, phí phạt một đêm lưu trú sẽ được áp dụng. Khách hàng thành viên cao cấp hoặc khách VIP có thể được hưởng các điều khoản hủy ưu đãi hơn tùy thuộc vào hạng thành viên."
+  },
+  {
+    "id": "gen_chinh-sach_late-checkout_v4",
+    "category": "chinh-sach",
+    "tags": [
+      "late checkout",
+      "trả phòng",
+      "ưu đãi"
+    ],
+    "title": "Quy định Trả phòng Muộn (Late Checkout)",
+    "content": "Giờ trả phòng tiêu chuẩn là 12:00 trưa. Khách có nhu cầu trả phòng muộn có thể yêu cầu tại quầy lễ tân và sẽ được xem xét dựa trên tình trạng phòng trống. Trả phòng muộn đến 18:00 có thể phát sinh phụ phí 50% giá phòng, và sau 18:00 sẽ tính phí một đêm đầy đủ. Thành viên chương trình khách hàng thân thiết và khách VIP có thể được ưu tiên miễn phí trả phòng muộn đến một khung giờ nhất định tùy theo hạng thành viên và tình hình thực tế."
+  },
+  {
+    "id": "gen_chinh-sach_quy-dinh-minibar_v4",
+    "category": "chinh-sach",
+    "tags": [
+      "minibar",
+      "tiện nghi phòng",
+      "thanh toán"
+    ],
+    "title": "Quy định Sử dụng Minibar",
+    "content": "Minibar trong phòng được trang bị đầy đủ các loại đồ uống và đồ ăn nhẹ cao cấp để quý khách tiện lợi sử dụng. Hệ thống cảm biến tự động sẽ ghi nhận các mặt hàng được lấy ra, và phí sử dụng sẽ được cộng vào hóa đơn cuối cùng của quý khách. Một số mặt hàng đặc biệt hoặc quà tặng chào mừng cho khách VIP có thể được miễn phí. Vui lòng liên hệ dịch vụ phòng nếu quý khách có nhu cầu bổ sung hoặc có bất kỳ thắc mắc nào."
+  },
+  {
+    "id": "gen_chinh-sach_quy-dinh-phong-vip_v3",
+    "category": "chinh-sach",
+    "tags": [
+      "phòng VIP",
+      "ưu đãi",
+      "dịch vụ cao cấp"
+    ],
+    "title": "Quy định và Ưu đãi Phòng VIP",
+    "content": "Phòng VIP của chúng tôi được thiết kế để mang lại trải nghiệm lưu trú đẳng cấp và độc quyền nhất. Khách VIP được hưởng các đặc quyền như quản gia riêng 24/7, quyền sử dụng Executive Lounge miễn phí với các bữa ăn nhẹ và đồ uống cao cấp, dịch vụ đưa đón sân bay sang trọng và ưu tiên đặt chỗ tại tất cả các nhà hàng, spa của khách sạn. Mọi yêu cầu cá nhân hóa sẽ được đội ngũ chuyên nghiệp của chúng tôi đáp ứng tận tâm để đảm bảo sự hài lòng tuyệt đối."
+  },
+  {
+    "id": "gen_phong_tv",
+    "category": "phong",
+    "tags": [
+      "tiện nghi",
+      "giải trí",
+      "công nghệ"
+    ],
+    "title": "Quy định về Tiêu chuẩn và Vận hành TV trong phòng",
+    "content": "Mỗi phòng phải được trang bị Smart TV màn hình phẳng tối thiểu 55 inch với chất lượng hình ảnh 4K sắc nét và âm thanh sống động. Hệ thống kênh truyền hình đa dạng, bao gồm các kênh quốc tế cao cấp và dịch vụ truyền phát trực tuyến tích hợp, phải luôn hoạt động hoàn hảo. Đảm bảo giao diện người dùng thân thiện, dễ thao tác và đội ngũ kỹ thuật sẵn sàng hỗ trợ 24/7 để khắc phục mọi sự cố tức thì."
+  },
+  {
+    "id": "gen_phong_nuoc_nong",
+    "category": "phong",
+    "tags": [
+      "tiện nghi",
+      "vệ sinh",
+      "thoải mái"
+    ],
+    "title": "Quy định về Hệ thống Nước Nóng trong phòng tắm",
+    "content": "Hệ thống nước nóng trong phòng tắm phải luôn sẵn sàng tức thì, đảm bảo nhiệt độ ổn định ở mức dễ chịu (khoảng 40-45°C) và áp lực nước mạnh mẽ, liên tục. Không được có bất kỳ sự chậm trễ nào trong việc cung cấp nước nóng khi khách sử dụng. Công tác kiểm tra định kỳ về an toàn, hiệu suất và vệ sinh của hệ thống phải được thực hiện nghiêm ngặt để đảm bảo trải nghiệm thư giãn tuyệt đối cho khách."
+  },
+  {
+    "id": "gen_phong_wi_fi",
+    "category": "phong",
+    "tags": [
+      "kết nối",
+      "tiện ích",
+      "công nghệ"
+    ],
+    "title": "Quy định về Dịch vụ Wi-Fi trong phòng",
+    "content": "Mỗi phòng phải được cung cấp dịch vụ Wi-Fi tốc độ cao, ổn định và bảo mật tuyệt đối, đảm bảo khách hàng có thể truy cập internet mượt mà cho mọi nhu cầu công việc và giải trí. Tín hiệu phải mạnh mẽ ở mọi vị trí trong phòng và quá trình kết nối phải đơn giản, không yêu cầu các bước phức tạp. Đội ngũ hỗ trợ kỹ thuật phải luôn túc trực 24/7 để giải quyết mọi vấn đề kết nối một cách nhanh chóng và hiệu quả."
+  },
+  {
+    "id": "gen_phong_kiem_tra_phong_truoc_giao_khach",
+    "category": "phong",
+    "tags": [
+      "vận hành",
+      "chất lượng dịch vụ",
+      "tiêu chuẩn"
+    ],
+    "title": "Quy trình Kiểm tra Phòng trước khi Bàn giao Khách",
+    "content": "Trước khi bàn giao, mọi phòng phải trải qua quy trình kiểm tra toàn diện, tỉ mỉ theo danh mục tiêu chuẩn 5 sao, bao gồm độ sạch sẽ hoàn hảo, sự vận hành trơn tru của tất cả thiết bị và tiện nghi, cũng như tính thẩm mỹ tổng thể. Mọi chi tiết nhỏ nhất, từ ánh sáng, nhiệt độ, đến sự sắp xếp vật dụng, phải được đảm bảo không tì vết. Việc kiểm tra cuối cùng bởi giám sát viên là bắt buộc để đảm bảo phòng đạt tiêu chuẩn cao nhất, sẵn sàng mang đến trải nghiệm hoàn hảo cho khách."
+  },
+  {
+    "id": "faq_paris_france_flight",
+    "category": "dich-vu",
+    "tags": [
+      "thủ đô pháp",
+      "paris",
+      "pháp",
+      "bay sang pháp",
+      "thời gian bay",
+      "vé máy bay",
+      "quốc tế",
+      "sân bay"
+    ],
+    "title": "Thông tin về Thủ đô nước Pháp (Paris) và Thời gian bay từ Việt Nam",
+    "content": "Thủ đô của nước Pháp là thành phố Paris. Thời gian bay từ Việt Nam (sân bay Nội Bài - Hà Nội hoặc Tân Sơn Nhất - TP.HCM) sang Paris (sân bay Charles de Gaulle - CDG) thông thường mất khoảng 12 đến 14 tiếng đối với chuyến bay thẳng, hoặc từ 16 đến 22 tiếng nếu bay quá cảnh (transit 1 điểm dừng). Grand Palace Hotel cung cấp dịch vụ đặt xe đưa đón ra sân bay quốc tế 24/7 và hỗ trợ khách đặt vé máy bay, tư vấn thủ tục visa đi Pháp và các nước châu Âu tại quầy Lễ tân/Concierge."
+  },
+  {
+    "id": "faq_hanoi_weather_travel",
+    "category": "tour-du-lich",
+    "tags": [
+      "thời tiết hà nội",
+      "ngày mai",
+      "dự báo thời tiết",
+      "thời tiết",
+      "du lịch hà nội",
+      "thích hợp du lịch",
+      "trời mưa",
+      "trời nắng"
+    ],
+    "title": "Dự báo thời tiết Hà Nội và Tư vấn lịch trình du lịch",
+    "content": "Khách sạn Grand Palace tích hợp bảng tin và widget thời tiết trực tiếp trên hệ thống để khách lưu trú cập nhật nhiệt độ, độ ẩm và dự báo thời tiết tại Hà Nội ngày mai cũng như các ngày tới. Bộ phận Concierge / Lễ tân luôn sẵn sàng tư vấn lịch trình tham quan thích hợp nhất: Nếu thời tiết nắng ráo mát mẻ, rất lý tưởng để dạo quanh Hồ Hoàn Kiếm, Phố Cổ, Văn Miếu hoặc trải nghiệm xe bus 2 tầng; nếu trời mưa hoặc thời tiết xấu, khách sạn cung cấp ô dù miễn phí và gợi ý các điểm tham quan trong nhà thú vị như Bảo tàng Dân tộc học, Bảo tàng Mỹ thuật, Nhà hát Lớn hoặc thư giãn tại Royal Spa của khách sạn."
+  },
+  {
+    "id": "faq_vingroup_stock",
+    "category": "chinh-sach",
+    "tags": [
+      "cổ phiếu",
+      "vingroup",
+      "vic",
+      "giá cổ phiếu",
+      "hôm nay",
+      "chứng khoán",
+      "tài chính",
+      "tăng hay giảm"
+    ],
+    "title": "Phạm vi cung cấp thông tin tài chính và Giá cổ phiếu (Vingroup / VIC)",
+    "content": "Hệ thống Trợ lý AI và nhân viên Grand Palace Hotel chỉ cung cấp thông tin liên quan đến dịch vụ khách sạn, đặt phòng, tiện ích lưu trú, ẩm thực và du lịch địa phương. Khách sạn KHÔNG cập nhật và không cung cấp dữ liệu giá cổ phiếu của tập đoàn Vingroup (mã VIC) hay bất kỳ mã chứng khoán nào theo thời gian thực do đây là thị trường tài chính biến động liên tục. Để biết giá cổ phiếu Vingroup hôm nay tăng hay giảm, quý khách vui lòng tra cứu trực tiếp trên các bảng điện tử chứng khoán chính thức (như SSI, TCBS, VNDirect, Vietstock) hoặc ứng dụng giao dịch tài chính chuyên dụng."
+  },
+  {
+    "id": "facility_helipad_vip",
+    "category": "dich-vu",
+    "tags": [
+      "bãi đáp trực thăng",
+      "trực thăng",
+      "helipad",
+      "tầng thượng",
+      "khách vip",
+      "chuyên cơ",
+      "máy bay"
+    ],
+    "title": "Thông tin về Bãi đáp trực thăng (Helipad) trên tầng thượng",
+    "content": "Hiện tại Grand Palace Hotel KHÔNG có bãi đáp trực thăng (Helipad) ở tầng thượng. Tầng thượng của khách sạn được thiết kế dành cho Bể bơi vô cực ngắm cảnh toàn thành phố (Sky Pool) và quầy bar Sky Lounge ngoài trời. Đối với khách VIP, chính khách hoặc doanh nhân di chuyển bằng trực thăng hoặc máy bay riêng, trực thăng sẽ hạ cánh tại sân bay quốc tế hoặc sân bay trực thăng quân sự gần nhất được cấp phép. Khách sạn sẽ bố trí xe Limousine hoặc xe sang đón tiễn riêng cùng đội ngũ an ninh phục vụ đưa đón thẳng từ sân bay về khách sạn."
+  },
+  {
+    "id": "service_limousine_airport_pricing",
+    "category": "dich-vu",
+    "tags": [
+      "limousine",
+      "xe limousine",
+      "9 chỗ",
+      "xe 9 chỗ",
+      "đưa đón sân bay",
+      "giá xe",
+      "chi phí đón tiễn",
+      "sân bay về khách sạn"
+    ],
+    "title": "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+    "content": "Grand Palace Hotel cung cấp dịch vụ đưa đón sân bay bằng dòng xe Limousine cao cấp 9 chỗ (ghế massage bọc da, wifi, nước suối, khăn lạnh, cổng sạc USB): (1) Chiều đón từ sân bay về khách sạn: 850.000 VNĐ / chuyến. (2) Chiều tiễn từ khách sạn ra sân bay: 800.000 VNĐ / chuyến. (3) Đặt trọn gói khứ hồi 2 chiều: 1.500.000 VNĐ. Giá đã bao gồm phí cầu đường, bến bãi sân bay và tài xế đón tại cửa ga với biển đón tên khách. Quý khách vui lòng đặt trước tối thiểu 2 đến 3 tiếng so với giờ hạ cánh/khởi hành qua bộ phận Lễ tân hoặc Trợ lý AI để được sắp xếp xe chu đáo."
+  },
+  {
+    "id": "facility_infinity_pool_hours",
+    "category": "dich-vu",
+    "tags": [
+      "bể bơi vô cực",
+      "hồ bơi vô cực",
+      "bể bơi",
+      "mở cửa mấy giờ",
+      "giờ mở cửa",
+      "đóng cửa",
+      "infinity pool",
+      "tầng thượng"
+    ],
+    "title": "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+    "content": "Bể bơi vô cực (Infinity Pool) của Grand Palace Hotel tọa lạc tại tầng thượng (Rooftop), mở cửa phục vụ hàng ngày từ 06:00 sáng đến 21:00 tối. Bể bơi hoàn toàn MIỄN PHÍ đối với tất cả khách đang lưu trú tại khách sạn. Tiện ích đi kèm gồm: khăn tắm miễn phí, ghế nằm tắm nắng ngắm toàn cảnh thành phố, phòng tắm tráng và thay đồ sạch sẽ, quầy Pool Bar phục vụ cocktail và đồ ăn nhẹ, cùng nhân viên cứu hộ trực an toàn 100% thời gian mở cửa."
+  },
+  {
+    "id": "service_spa_hotstone_mud_bath",
+    "category": "dich-vu",
+    "tags": [
+      "spa",
+      "massage đá nóng",
+      "tắm bùn",
+      "tắm bùn trọn gói",
+      "royal spa",
+      "xông hơi",
+      "sauna",
+      "massage"
+    ],
+    "title": "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng",
+    "content": "Khu vực Royal Spa của khách sạn cung cấp các gói trị liệu chăm sóc sức khỏe và làm đẹp chuyên sâu: (1) Massage đá nóng bazan thư giãn (Hot Stone Therapy): gói 60 phút (650.000 VNĐ) hoặc 90 phút (900.000 VNĐ), giúp đả thông kinh lạc, giảm nhức mỏi. (2) Massage tinh dầu thảo dược thiên nhiên, massage chân truyền thống. (3) Phòng xông hơi khô (Sauna) và xông hơi ướt (Steam bath) thảo mộc. VỀ DỊCH VỤ TẮM BÙN: Khách sạn KHÔNG có bồn tắm bùn khoáng trực tiếp tại khuôn viên khách sạn. Tuy nhiên, Lễ tân và Tour Desk có dịch vụ liên kết trọn gói hỗ trợ khách đặt tour tắm bùn khoáng nóng thiên nhiên tại các khu du lịch khoáng nóng lân cận (bao gồm vé vào cổng, dịch vụ ngâm bùn khoáng thảo dược và xe Limousine đưa đón tận nơi)."
+  },
+  {
+    "id": "policy_cancel_12_hours",
+    "category": "chinh-sach",
+    "tags": [
+      "hủy phòng trước 12 tiếng",
+      "12 tiếng",
+      "hủy phòng",
+      "hoàn tiền bao nhiêu %",
+      "tỷ lệ hoàn",
+      "chính sách hủy"
+    ],
+    "title": "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+    "content": "Theo quy định hủy đặt phòng của Grand Palace Hotel, nếu quý khách yêu cầu hủy phòng trước 12 tiếng so với giờ check-in tiêu chuẩn (14:00), tỷ lệ hoàn tiền là 0% (KHÔNG ĐƯỢC HOÀN TIỀN). Khách sạn sẽ thu 100% tiền phòng của đêm đầu tiên (hoặc toàn bộ tiền cọc). Lý do: Quy định hoàn tiền chỉ áp dụng hoàn 100% khi hủy trước ít nhất 48 giờ, và hoàn 50% khi hủy từ 24 đến 48 giờ trước giờ check-in. Mọi yêu cầu hủy phòng trong vòng 24 giờ trước giờ nhận phòng (bao gồm hủy trước 12 tiếng) đều được tính vào khung hủy sát giờ/không hoàn tiền. Trường hợp bất khả kháng có giấy tờ y tế hoặc chuyến bay bị hủy do hãng hàng không sẽ được xem xét hỗ trợ dời ngày miễn phí."
+  },
+  {
+    "id": "policy_smoking_vape_pod",
+    "category": "chinh-sach",
+    "tags": [
+      "thuốc lá điện tử",
+      "vape",
+      "pod",
+      "iqos",
+      "hút vape trong phòng",
+      "hút thuốc",
+      "hút thuốc lá điện tử",
+      "shisha"
+    ],
+    "title": "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+    "content": "Grand Palace Hotel TUYỆT ĐỐI CẤM hút thuốc lá truyền thống và TẤT CẢ các loại thuốc lá điện tử (Vape, Pod System, IQOS, Shisha) bên trong TOÀN BỘ các phòng nghỉ của khách sạn, không có bất kỳ ngoại lệ nào. Khách sạn KHÔNG có loại phòng nào cho phép hút thuốc lá điện tử bên trong. Lý do: Hơi thuốc lá điện tử chứa hạt sương mịn và tinh dầu mùi nồng bám dai vào đệm ga, rèm cửa, hệ thống điều hòa không khí, đồng thời lượng khói/hơi nước dày đặc có thể kích hoạt hệ thống đầu dò báo khói PCCC tự động toàn tòa nhà. Khách có nhu cầu hút vape vui lòng chỉ hút tại ban công thoáng khí (nếu phòng có ban công riêng) hoặc khu vực hút thuốc ngoài trời được chỉ định tại tầng 1 (khuôn viên sân vườn). Nếu vi phạm hút vape trong phòng kín, khách sẽ bị phạt phí khử mùi ozon và vệ sinh công nghiệp 1.000.000 VNĐ."
+  },
+  {
+    "id": "fact_hotel_profile",
+    "category": "chinh-sach",
+    "tags": [
+      "thông tin khách sạn",
+      "grand palace",
+      "check-in",
+      "check-out",
+      "giờ nhận phòng",
+      "giờ trả phòng",
+      "early check-in",
+      "late check-out"
+    ],
+    "title": "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+    "content": "Grand Palace Hotel là Khách sạn 5 sao quốc tế tọa lạc tại Trung tâm Thành phố Thái Nguyên, Việt Nam. Giờ check-in tiêu chuẩn là 14:00. Giờ check-out tiêu chuẩn là 12:00. Quy định Early Check-in: Từ 10:00 (phụ phí 50% hoặc miễn phí nếu có phòng sẵn cho khách VIP). Quy định Late Check-out: Đến 14:00 (miễn phí tùy phòng trống và miễn phí cho khách VIP), từ 14:00-18:00 phụ phí 50%, sau 18:00 tính 1 đêm."
+  },
+  {
+    "id": "policy_pet_strict",
+    "category": "chinh-sach",
+    "tags": [
+      "thú cưng",
+      "vật nuôi",
+      "chó mèo",
+      "mang thú",
+      "động vật",
+      "pet"
+    ],
+    "title": "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+    "content": "Grand Palace Hotel TUYỆT ĐỐI KHÔNG cho phép mang bất kỳ loại thú cưng hay động vật nuôi nào vào khuôn viên khách sạn (bao gồm chó, mèo, chim và tất cả các loài động vật khác). Quy định áp dụng nghiêm ngặt cho mọi loài vật nuôi, không phân biệt kích cỡ lớn hay nhỏ, kể cả khi nhốt trong lồng hoặc túi xách. Phụ phí làm sạch và khử khuẩn phòng nếu vi phạm là 500.000 VNĐ. Ngoại lệ duy nhất: Chỉ chấp nhận chó dẫn đường hợp pháp cho người khiếm thị có giấy tờ y tế xác nhận và thông báo trước."
+  },
+  {
+    "id": "policy_smoking_vape_strict",
+    "category": "chinh-sach",
+    "tags": [
+      "hút thuốc",
+      "thuốc lá điện tử",
+      "vape",
+      "pod",
+      "iqos",
+      "shisha",
+      "cấm hút thuốc",
+      "hút vape trong phòng"
+    ],
+    "title": "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+    "content": "Khách sạn 100% không hút thuốc trong phòng. CẤM cả thuốc lá truyền thống và thuốc lá điện tử (Vape, Pod, IQOS, Shisha) trong toàn bộ phòng ngủ và không gian kín. Khu vực được phép hút thuốc: Ban công riêng thoáng khí (nếu phòng có ban công) hoặc khu vực sân vườn ngoài trời tầng 1.. Phụ phí xử lý vi phạm khử mùi ozon trong phòng là 1.000.000 VNĐ."
+  },
+  {
+    "id": "policy_cancel_refund_strict",
+    "category": "chinh-sach",
+    "tags": [
+      "hủy phòng",
+      "hoàn tiền",
+      "hủy trước 12 tiếng",
+      "12 tiếng",
+      "tỷ lệ hoàn tiền",
+      "chính sách hủy",
+      "đổi ngày"
+    ],
+    "title": "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+    "content": "Chính sách hoàn tiền khi hủy phòng tại Grand Palace: (1) Hủy trước 48h: Hoàn tiền 100%, không mất phí. (2) Hủy từ 24h đến 48h: Hoàn tiền 50% tổng tiền đặt phòng. (3) Hủy dưới 24h hoặc không đến (bao gồm hủy trước 12 tiếng): Hoàn tiền 0% (KHÔNG hoàn tiền, tính phí 100% đêm đầu tiên hoặc toàn bộ tiền cọc). Áp dụng cho mọi trường hợp hủy trước 12 tiếng, 6 tiếng, 2 tiếng... (4) Trường hợp bất khả kháng: Bệnh tật, thiên tai có chứng từ xác nhận được bảo lưu hoặc đổi ngày miễn phí."
+  },
+  {
+    "id": "facility_infinity_pool",
+    "category": "dich-vu",
+    "tags": [
+      "bể bơi vô cực",
+      "hồ bơi",
+      "infinity pool",
+      "giờ mở cửa",
+      "mấy giờ",
+      "tầng thượng",
+      "miễn phí"
+    ],
+    "title": "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+    "content": "Bể bơi vô cực (Infinity Sky Pool) tọa lạc tại Tầng thượng (Rooftop). Giờ mở cửa: 06:00 - 21:00 hàng ngày. Giá vé: Hoàn toàn miễn phí cho khách lưu trú. Tiện ích đi kèm: Khăn tắm miễn phí, ghế tắm nắng toàn cảnh thành phố, phòng tắm tráng, cứu hộ trực 100% thời gian."
+  },
+  {
+    "id": "facility_helipad_rooftop",
+    "category": "dich-vu",
+    "tags": [
+      "bãi đáp trực thăng",
+      "trực thăng",
+      "helipad",
+      "tầng thượng",
+      "khách vip",
+      "chuyên cơ"
+    ],
+    "title": "Thông tin Bãi đáp trực thăng (Helipad) và Đón tiễn VIP",
+    "content": "Khách sạn KHÔNG có bãi đáp trực thăng trên tầng thượng. Tầng thượng là khu vực dành riêng cho Bể bơi vô cực và Sky Lounge. Phương án đón tiễn khách VIP đi trực thăng/máy bay: Khách VIP đi trực thăng/chuyên cơ cá nhân sẽ hạ cánh tại sân bay quốc tế hoặc sân bay quân sự gần nhất; khách sạn bố trí xe Limousine đón tiễn riêng về khách sạn."
+  },
+  {
+    "id": "service_limousine_airport",
+    "category": "dich-vu",
+    "tags": [
+      "limousine",
+      "xe limousine",
+      "9 chỗ",
+      "đưa đón sân bay",
+      "giá xe",
+      "chi phí đón tiễn"
+    ],
+    "title": "Bảng giá và Dịch vụ xe Limousine VIP 9 chỗ đưa đón sân bay",
+    "content": "Dịch vụ xe Limousine Dcar VIP 9 chỗ: Chiều đón: 850.000 VNĐ / chuyến (từ sân bay về khách sạn). Chiều tiễn: 800.000 VNĐ / chuyến (từ khách sạn ra sân bay). Trọn gói khứ hồi: 1.500.000 VNĐ / 2 chiều khứ hồi. Tiện ích bao gồm: Tài xế đón tận sảnh với biển tên, nước suối, khăn lạnh, wifi tốc độ cao, cổng sạc USB, phí cầu đường bến bãi. Yêu cầu đặt trước: Đặt trước tối thiểu 2 đến 3 tiếng."
+  },
+  {
+    "id": "service_spa_massage_mud",
+    "category": "dich-vu",
+    "tags": [
+      "spa",
+      "massage đá nóng",
+      "tắm bùn",
+      "tắm bùn trọn gói",
+      "royal spa",
+      "xông hơi",
+      "sauna"
+    ],
+    "title": "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng",
+    "content": "Dịch vụ tại Royal Spa: Massage đá nóng bazan: Gói 60 phút (650.000 VNĐ) hoặc 90 phút (900.000 VNĐ) với đá nóng bazan tự nhiên.. Các dịch vụ khác: Massage tinh dầu thảo dược, massage chân bấm huyệt, xông hơi khô (Sauna), xông hơi ướt (Steam bath).. Thông tin tắm bùn khoáng: Khách sạn KHÔNG có dịch vụ bồn tắm bùn khoáng tại chỗ trong khuôn viên; Tour Desk hỗ trợ đặt tour trọn gói tắm bùn khoáng thiên nhiên tại các khu suối khoáng lân cận có xe đưa đón."
+  },
+  {
+    "id": "faq_paris_flight_info",
+    "category": "dich-vu",
+    "tags": [
+      "thủ đô pháp",
+      "paris",
+      "pháp",
+      "bay sang pháp",
+      "thời gian bay",
+      "vé máy bay",
+      "quốc tế"
+    ],
+    "title": "Thông tin Thủ đô nước Pháp (Paris) và Thời gian bay từ Việt Nam",
+    "content": "Thủ đô nước Pháp là Paris. Bay thẳng từ Việt Nam (Hà Nội/TP.HCM) sang Paris (sân bay Charles de Gaulle - CDG) mất khoảng 12 - 14 tiếng; bay quá cảnh (transit 1 điểm dừng) mất 16 - 22 tiếng. Dịch vụ hỗ trợ: Khách sạn có dịch vụ xe đưa đón sân bay 24/7 và hỗ trợ đặt vé máy bay, tư vấn visa châu Âu tại quầy Concierge."
+  },
+  {
+    "id": "faq_hanoi_weather_info",
+    "category": "tour-du-lich",
+    "tags": [
+      "thời tiết hà nội",
+      "ngày mai",
+      "dự báo thời tiết",
+      "du lịch hà nội",
+      "thích hợp du lịch"
+    ],
+    "title": "Dự báo thời tiết Hà Nội và Tư vấn lịch trình du lịch",
+    "content": "Hệ thống PMS và màn hình sảnh tích hợp widget thời tiết cập nhật liên tục. Gợi ý hoạt động: Trời nắng ráo: dạo Hồ Gươm, Phố Cổ, Văn Miếu; Trời mưa: khách sạn cung cấp ô dù miễn phí, gợi ý tham quan bảo tàng, thưởng thức cà phê hoặc trải nghiệm Royal Spa."
+  },
+  {
+    "id": "faq_vingroup_stock_info",
+    "category": "chinh-sach",
+    "tags": [
+      "cổ phiếu",
+      "vingroup",
+      "vic",
+      "giá cổ phiếu",
+      "chứng khoán",
+      "tài chính",
+      "tăng hay giảm"
+    ],
+    "title": "Phạm vi hỗ trợ thông tin tài chính và Giá cổ phiếu (Vingroup / VIC)",
+    "content": "Khách sạn chỉ hỗ trợ thông tin lưu trú, dịch vụ phòng và du lịch. KHÔNG cung cấp số liệu biến động giá cổ phiếu Vingroup (VIC) hay chứng khoán thời gian thực. Hướng dẫn khách xem trên bảng điện tử SSI, TCBS, VNDirect..."
+  },
+  {
+    "id": "phong_tong_quan_001",
+    "category": "phong",
+    "tags": [
+      "loại phòng", "các loại phòng", "phòng nào", "phòng có gì",
+      "danh sách phòng", "phòng khách sạn", "chọn phòng", "bảng giá phòng",
+      "phòng đơn", "phòng đôi", "vip", "suite", "president",
+      "giá phòng", "bảng giá", "phòng có những loại nào", "tất cả phòng"
+    ],
+    "title": "Tổng quan các loại phòng tại Grand Palace Hotel",
+    "content": "Grand Palace Hotel có 4 loại phòng với tổng cộng 20 phòng:\n\n1. PHÒNG ĐƠN (6 phòng – Tầng 1, 5, 7): Phòng đơn tiêu chuẩn, phù hợp 1 người. Giá từ 600.000 VNĐ/đêm. Gồm các phòng: 101, 102, 103, 104, 802, 901. Đặc điểm: WiFi, điều hòa, TV, phòng tắm riêng. Một số phòng có balcony hoặc nhìn ra hồ bơi.\n\n2. PHÒNG ĐÔI (6 phòng – Tầng 2, 3, 5): Phòng đôi cho 2 người. Giá từ 900.000 VNĐ/đêm. Gồm các phòng: 201, 202, 203, 204, 304, 804. Đặc điểm: 2 giường đơn hoặc 1 giường King size, view thành phố.\n\n3. PHÒNG VIP / PRESIDENT (5 phòng – Tầng 3, 4, 5): Phòng cao cấp VIP. Giá từ 1.500.000 VNĐ/đêm. Gồm các phòng: 301, 302, 303, 403, 803. Đặc điểm: View toàn cảnh, minibar, Jacuzzi, dịch vụ butler riêng.\n\n4. PHÒNG SUITE (3 phòng – Tầng 4): Phòng Suite sang trọng bậc nhất. Giá từ 1.400.000 VNĐ/đêm. Gồm các phòng: 401, 402, 801. Đặc điểm: Presidential Suite, phòng khách riêng, view toàn cảnh thành phố."
+  },
+  {
+    "id": "phong_don_001",
+    "category": "phong",
+    "tags": [
+      "phòng đơn", "đơn", "don", "1 người", "một người", "phòng đơn tiêu chuẩn",
+      "phòng 101", "phòng 102", "phòng 103", "phòng 104", "phòng 802", "phòng 901",
+      "tầng 1", "600 nghìn", "600000", "rẻ nhất", "phòng thường",
+      "nhìn ra hồ bơi", "balcony", "phòng 1 giường"
+    ],
+    "title": "Chi tiết Phòng Đơn – Grand Palace Hotel",
+    "content": "PHÒNG ĐƠN – Grand Palace Hotel. Phù hợp cho 1 khách đi một mình hoặc công tác. Tổng cộng 6 phòng. Giá từ 600.000 VNĐ/đêm. Danh sách phòng và vị trí: 101 (Tầng 1, nhìn ra hồ bơi, 600.000đ), 102 (Tầng 1, tiêu chuẩn, 600.000đ), 103 (Tầng 1, tiêu chuẩn, 600.000đ), 104 (Tầng 1, cao cấp có balcony, 700.000đ), 802 (Tầng 5, đầy đủ tiện nghi, 9.876.543đ), 901 (Tầng 7, 600.000đ). Tiện nghi cơ bản: WiFi miễn phí, điều hòa, TV, phòng tắm riêng, tủ đựng đồ."
+  },
+  {
+    "id": "phong_doi_001",
+    "category": "phong",
+    "tags": [
+      "phòng đôi", "đôi", "doi", "2 người", "hai người", "cặp đôi", "gia đình nhỏ",
+      "phòng 201", "phòng 202", "phòng 203", "phòng 204", "phòng 304", "phòng 804",
+      "tầng 2", "900 nghìn", "900000", "king size", "view thành phố", "2 giường"
+    ],
+    "title": "Chi tiết Phòng Đôi – Grand Palace Hotel",
+    "content": "PHÒNG ĐÔI – Grand Palace Hotel. Phù hợp cho 2 khách, cặp đôi hoặc gia đình nhỏ. Tổng cộng 6 phòng. Giá từ 900.000 VNĐ/đêm. Danh sách phòng và vị trí: 201 (Tầng 2, 2 giường đơn, 900.000đ), 202 (Tầng 2, view thành phố, 900.000đ), 203 (Tầng 2, giường King size, 950.000đ), 204 (Tầng 2, tiêu chuẩn, 900.000đ), 304 (Tầng 3, 7.000.000đ), 804 (Tầng 5, 7.000.000đ). Tiện nghi: WiFi miễn phí, điều hòa, TV, 2 giường đơn hoặc 1 giường King size, phòng tắm riêng."
+  },
+  {
+    "id": "phong_vip_001",
+    "category": "phong",
+    "tags": [
+      "phòng vip", "vip", "president", "vip president", "phòng cao cấp",
+      "phòng 301", "phòng 302", "phòng 303", "phòng 403", "phòng 803",
+      "tầng 3", "1.5 triệu", "1500000", "jacuzzi", "minibar", "butler",
+      "view toàn cảnh", "phòng sang", "phòng đắt"
+    ],
+    "title": "Chi tiết Phòng VIP / President – Grand Palace Hotel",
+    "content": "PHÒNG VIP / PRESIDENT – Grand Palace Hotel. Phòng cao cấp dành cho khách VIP, doanh nhân. Tổng cộng 5 phòng. Giá từ 1.500.000 VNĐ/đêm. Danh sách phòng và vị trí: 301 (Tầng 3, view toàn cảnh, 1.500.000đ), 302 (Tầng 3, minibar + Jacuzzi, 1.500.000đ), 303 (Tầng 3, đang bảo trì, 1.600.000đ), 403 (Tầng 4, VIP cao cấp, 12.000.000đ), 803 (Tầng 5, view đặc biệt, 54.683.484đ). Tiện nghi đẳng cấp: WiFi, điều hòa trung tâm, TV màn hình lớn, Minibar, Jacuzzi, dịch vụ Butler riêng, View toàn cảnh thành phố."
+  },
+  {
+    "id": "phong_suite_001",
+    "category": "phong",
+    "tags": [
+      "phòng suite", "suite", "presidential suite", "phòng sang trọng",
+      "phòng 401", "phòng 402", "phòng 801",
+      "tầng 4", "3.5 triệu", "3500000", "phòng khách riêng",
+      "view toàn cảnh", "phòng đắt nhất", "phòng tốt nhất"
+    ],
+    "title": "Chi tiết Phòng Suite – Grand Palace Hotel",
+    "content": "PHÒNG SUITE – Grand Palace Hotel. Phòng Suite sang trọng bậc nhất khách sạn. Tổng cộng 3 phòng, đều ở Tầng 4. Giá từ 1.400.000 VNĐ/đêm. Danh sách phòng: 401 (Presidential Suite, đang có khách, 3.500.000đ), 402 (Suite cao cấp view toàn cảnh TP, còn trống, 3.500.000đ), 801 (Suite, còn trống, 1.400.000đ). Tiện nghi hạng sang: WiFi, điều hòa trung tâm, TV màn hình lớn, Minibar cao cấp, Phòng khách riêng, View toàn cảnh thành phố, dịch vụ butler 24/7."
+  }
+]

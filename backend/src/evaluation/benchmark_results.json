@@ -1,0 +1,5116 @@
+{
+  "summary": {
+    "lexical": {
+      "recall1": 49.4,
+      "recall3": 70,
+      "precision3": 54.4,
+      "mrr": 0.66,
+      "ragas": {
+        "precision": 8,
+        "recall": 8,
+        "faithfulness": 8.8,
+        "relevancy": 8,
+        "correctness": 7.9,
+        "overall": 8.1
+      },
+      "noAnsPassRate": "16/20 (80%)"
+    },
+    "hybrid": {
+      "recall1": 53.8,
+      "recall3": 80.6,
+      "precision3": 54.4,
+      "mrr": 0.742,
+      "ragas": {
+        "precision": 8.3,
+        "recall": 8.1,
+        "faithfulness": 8.9,
+        "relevancy": 7.9,
+        "correctness": 7.8,
+        "overall": 8.2
+      },
+      "noAnsPassRate": "15/20 (75%)"
+    }
+  },
+  "gain": {
+    "recall1": "+4.4%",
+    "recall3": "+10.6%",
+    "precision3": "+0.0%",
+    "mrr": "+0.082",
+    "overallRagas": "+0.1"
+  },
+  "detailedResults": [
+    {
+      "id": "eval_01_checkin_standard",
+      "question": "Giờ nhận phòng (check-in) tiêu chuẩn của khách sạn Grand Palace là mấy giờ?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-in"
+      ],
+      "lexical": {
+        "titles": [
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Chính sách Check-in"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.7,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.8,
+          "answer_correctness": 8,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.9/10, Tính liên quan 8.8/10, Độ chuẩn xác 8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Chính sách Check-in",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.7,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.8,
+          "answer_correctness": 8,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 8.8/10, Độ chuẩn xác 8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_02_checkin_early_fee",
+      "question": "Tôi muốn nhận phòng sớm lúc 10 giờ sáng thì khách sạn tính phụ phí thế nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-in Sớm (Early Check-in)",
+        "Chính sách Check-in"
+      ],
+      "lexical": {
+        "titles": [
+          "Chính sách Check-in Sớm (Early Check-in)",
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Chính sách Nhận phòng sớm"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 8.3,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.5,
+          "answer_correctness": 7.9,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.5/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách Check-in Sớm (Early Check-in)",
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Chính sách Nhận phòng sớm"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 8.3,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.5,
+          "answer_correctness": 7.9,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.5/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_03_checkin_deposit",
+      "question": "Khi làm thủ tục check-in tại lễ tân, khách cần đặt cọc tối thiểu bao nhiêu tiền?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-in",
+        "Chính sách Đặt cọc Đảm bảo Đặt phòng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình check-in cho nhân viên lễ tân",
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.2,
+          "faithfulness": 9,
+          "response_relevancy": 6.9,
+          "answer_correctness": 8.2,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9/10, Tính liên quan 6.9/10, Độ chuẩn xác 8.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình check-in cho nhân viên lễ tân",
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 7.5,
+          "context_recall": 9.5,
+          "faithfulness": 10,
+          "response_relevancy": 6,
+          "answer_correctness": 7.2,
+          "overall_score": 8,
+          "reasoning": "Mô hình giữ trọn vẹn thông tin trung thực từ tài liệu nhưng sao chép nguyên văn cả quy trình 7 bước nội bộ của lễ tân thay vì trả lời trực diện vào số tiền đặt cọc tối thiểu theo câu hỏi."
+        }
+      }
+    },
+    {
+      "id": "eval_04_checkout_standard",
+      "question": "Giờ trả phòng (check-out) tiêu chuẩn là mấy giờ trưa?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-out",
+        "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng"
+      ],
+      "lexical": {
+        "titles": [
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Chính sách Check-out",
+          "Chính sách Check-out Muộn (Late Check-out)"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.5,
+          "context_recall": 10,
+          "faithfulness": 10,
+          "response_relevancy": 6.8,
+          "answer_correctness": 8.5,
+          "overall_score": 9,
+          "reasoning": "Ngữ cảnh trích xuất rất chính xác và đầy đủ, câu trả lời hoàn toàn trung thực với tài liệu nhưng bị điểm trừ nặng ở tính trực diện do bê nguyên cả đoạn văn chứa nhiều thông tin không được hỏi (check-in, giới thiệu khách sạn, chính sách phụ phí) thay vì trả lời thẳng vào giờ check-out."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Chính sách Check-out",
+          "Chính sách Check-out Muộn (Late Check-out)"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.5,
+          "context_recall": 10,
+          "faithfulness": 10,
+          "response_relevancy": 6.2,
+          "answer_correctness": 8.2,
+          "overall_score": 8.8,
+          "reasoning": "Mô hình sao chép nguyên văn cả đoạn văn bản chứa nhiều thông tin không được hỏi (giới thiệu khách sạn, giờ check-in, early check-in...) và mở/kết rườm rà thay vì trả lời trực diện vào câu hỏi về giờ trả phòng, dù thông tin cốt lõi vẫn chính xác và trung thực với ngữ cảnh."
+        }
+      }
+    },
+    {
+      "id": "eval_05_checkout_late_free",
+      "question": "Tôi có thể check-out muộn lúc 13h30 chiều mà không mất phí không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-out",
+        "Chính sách Check-out Muộn (Late Check-out)"
+      ],
+      "lexical": {
+        "titles": [
+          "Chính sách Check-out Muộn (Late Check-out)",
+          "Chính sách Check-out"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.4,
+          "faithfulness": 8.5,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.8,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.5/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách Check-out Muộn (Late Check-out)",
+          "Chính sách Check-out",
+          "Quy định Trả phòng Muộn (Late Checkout)"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 10,
+          "faithfulness": 9.5,
+          "response_relevancy": 6,
+          "answer_correctness": 5,
+          "overall_score": 7.9,
+          "reasoning": "Mô hình trích dẫn nguyên văn đoạn chính sách chung (tính phí từ 12:00-18:00) thay vì phát hiện quy định miễn phí đến 14:00 ngay trong ngữ cảnh, dẫn đến việc không trả lời đúng câu hỏi cụ thể về mốc 13h30 kèm lời thoại mở/kết rườm rà."
+        }
+      }
+    },
+    {
+      "id": "eval_06_checkout_late_afternoon",
+      "question": "Nếu tôi trả phòng lúc 16:00 chiều thì khách sạn tính phí thế nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-out",
+        "Chính sách Trả phòng muộn"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình kiểm kê và tính phí Minibar"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.5,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.6,
+          "answer_correctness": 7.6,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.6/10, Độ chuẩn xác 7.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình kiểm kê và tính phí Minibar"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.5,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.6,
+          "answer_correctness": 7.6,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.6/10, Độ chuẩn xác 7.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_07_checkout_late_night",
+      "question": "Nếu tôi giữ phòng đến sau 18:00 tối mới check-out thì tính tiền ra sao?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-out",
+        "Quy định Trả phòng Muộn (Late Checkout)"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Check-out",
+          "Quy trình check-out cho nhân viên lễ tân"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0.5,
+          "precision3": 0.333,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 9,
+          "faithfulness": 9.5,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.5/10, Tính liên quan 7.9/10, Độ chuẩn xác 7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định Trả phòng Muộn (Late Checkout)",
+          "Chính sách Trả phòng muộn",
+          "Chính sách Check-out"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 8.8,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_08_vip_checkin_privilege",
+      "question": "Khách hạng thẻ Kim Cương có được ưu tiên nhận phòng sớm không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-in",
+        "Quy trình đón tiếp khách VIP và Kim Cương"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình đón tiếp khách VIP và Kim Cương"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 0.5,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 7.7,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.3,
+          "answer_correctness": 7.9,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.3/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình đón tiếp khách VIP và Kim Cương",
+          "Chính sách Check-in Sớm (Early Check-in)",
+          "Chính sách Nhận phòng sớm"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.3,
+          "answer_correctness": 7.9,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.3/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_09_checkin_early_before_9am",
+      "question": "Nếu tôi đến khách sạn nhận phòng từ trước 9 giờ sáng thì tính phí như thế nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-in Sớm (Early Check-in)"
+      ],
+      "lexical": {
+        "titles": [
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Quy trình kiểm kê và tính phí Minibar"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8,
+          "faithfulness": 9,
+          "response_relevancy": 8.3,
+          "answer_correctness": 7.9,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9/10, Tính liên quan 8.3/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Quy trình kiểm kê và tính phí Minibar",
+          "Chính sách Check-in Sớm (Early Check-in)"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.333,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.7,
+          "faithfulness": 9,
+          "response_relevancy": 8.3,
+          "answer_correctness": 7.9,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9/10, Tính liên quan 8.3/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_10_late_checkout_deadline",
+      "question": "Khách muốn gia hạn check-out muộn cần thông báo cho lễ tân trước mấy giờ?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Check-out",
+        "Chính sách Check-out Muộn (Late Check-out)"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình check-out cho nhân viên lễ tân",
+          "Chính sách Check-out",
+          "Chính sách Check-out Muộn (Late Check-out)"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.3,
+          "faithfulness": 8.3,
+          "response_relevancy": 7.1,
+          "answer_correctness": 7.6,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.3/10, Tính liên quan 7.1/10, Độ chuẩn xác 7.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định Trả phòng Muộn (Late Checkout)",
+          "Quy trình check-out cho nhân viên lễ tân",
+          "Chính sách Check-out"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.333,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.1,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.1,
+          "answer_correctness": 7.6,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.1/10, Độ chuẩn xác 7.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_11_checkin_no_id",
+      "question": "Khách làm mất CMND/CCCD trên đường đi thì có thể check-in bằng giấy tờ gì thay thế?",
+      "answerable": true,
+      "expectedContexts": [
+        "Xử lý Trường hợp Khách hàng Không có Giấy tờ Tùy thân"
+      ],
+      "lexical": {
+        "titles": [
+          "Xử lý Trường hợp Khách hàng Không có Giấy tờ Tùy thân"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.7,
+          "faithfulness": 7.5,
+          "response_relevancy": 7.3,
+          "answer_correctness": 7.9,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 7.3/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Xử lý Trường hợp Khách hàng Không có Giấy tờ Tùy thân",
+          "Chính sách Check-in"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8,
+          "faithfulness": 8.9,
+          "response_relevancy": 7.3,
+          "answer_correctness": 7.9,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 7.3/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_12_express_checkout",
+      "question": "Khách sạn có hỗ trợ thủ tục trả phòng nhanh (express check-out) không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy trình check-out cho nhân viên lễ tân"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình check-out cho nhân viên lễ tân"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.4,
+          "answer_correctness": 8.1,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.4/10, Độ chuẩn xác 8.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình check-out cho nhân viên lễ tân",
+          "Chính sách Check-in Sớm (Early Check-in)",
+          "Chính sách Nhận phòng sớm"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.4,
+          "answer_correctness": 8.1,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.4/10, Độ chuẩn xác 8.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_13_cancel_48h",
+      "question": "Tôi hủy đặt phòng trước 48 tiếng so với giờ nhận phòng thì có được hoàn 100% tiền cọc không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách hủy đặt phòng và hoàn tiền"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.2,
+          "context_recall": 8.2,
+          "faithfulness": 9.5,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.5/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.2,
+          "context_recall": 8.2,
+          "faithfulness": 9.5,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.5/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_14_cancel_24_48h",
+      "question": "Nếu hủy phòng trong khoảng từ 24 đến 48 tiếng trước giờ check-in thì hoàn bao nhiêu %?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách hủy đặt phòng và hoàn tiền"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 9,
+          "faithfulness": 9.5,
+          "response_relevancy": 8,
+          "answer_correctness": 7.2,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.5/10, Tính liên quan 8/10, Độ chuẩn xác 7.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 9,
+          "faithfulness": 9.5,
+          "response_relevancy": 8,
+          "answer_correctness": 7.2,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.5/10, Tính liên quan 8/10, Độ chuẩn xác 7.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_15_cancel_under_24h",
+      "question": "Hủy phòng sát giờ trong vòng 24 tiếng trước khi nhận phòng có được hoàn tiền không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách hủy đặt phòng và hoàn tiền"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.9,
+          "faithfulness": 9.5,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.2,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.5/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.9,
+          "faithfulness": 9.5,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.2,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.5/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_16_cancel_under_12h",
+      "question": "Nếu tôi muốn hủy phòng trước 12 tiếng so với giờ check-in thì khách sạn hoàn tiền bao nhiêu %?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+        "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.7,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.7,
+          "answer_correctness": 8.8,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.7/10, Độ chuẩn xác 8.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.7,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.7,
+          "answer_correctness": 8.8,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.7/10, Độ chuẩn xác 8.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_17_refund_processing_time",
+      "question": "Thời gian hoàn tiền về tài khoản ngân hàng của khách sau khi hủy phòng mất bao lâu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách hủy đặt phòng và hoàn tiền"
+      ],
+      "lexical": {
+        "titles": [
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.1,
+          "answer_correctness": 8.1,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.1/10, Độ chuẩn xác 8.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.1,
+          "answer_correctness": 8.1,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.1/10, Độ chuẩn xác 8.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_18_noshow_policy",
+      "question": "Khách đã đặt phòng nhưng không đến nhận phòng (no-show) thì bị xử lý như thế nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách vắng mặt (No-Show)",
+        "Chính sách hủy đặt phòng và hoàn tiền"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình xử lý khiếu nại và phàn nàn của khách",
+          "Xử lý Trường hợp Khách hàng Không có Giấy tờ Tùy thân"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 7.4,
+          "faithfulness": 8.9,
+          "response_relevancy": 7.4,
+          "answer_correctness": 7.3,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.9/10, Tính liên quan 7.4/10, Độ chuẩn xác 7.3/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình xử lý khiếu nại và phàn nàn của khách",
+          "Xử lý Trường hợp Khách hàng Không có Giấy tờ Tùy thân",
+          "Chính sách Hủy dịch vụ và Hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0.5,
+          "precision3": 0.333,
+          "reciprocalRank": 0.333,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.2,
+          "context_recall": 7.9,
+          "faithfulness": 8.9,
+          "response_relevancy": 7.4,
+          "answer_correctness": 7.3,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 7.4/10, Độ chuẩn xác 7.3/10."
+        }
+      }
+    },
+    {
+      "id": "eval_19_force_majeure_cancel",
+      "question": "Trường hợp thiên tai bão lũ khiến chuyến bay bị hủy thì khách có được miễn phí hủy phòng không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách hủy đặt phòng và hoàn tiền"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.4,
+          "answer_correctness": 8.4,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.4/10, Độ chuẩn xác 8.4/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy dịch vụ và Hoàn tiền",
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.6,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.4,
+          "answer_correctness": 8.4,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.4/10, Độ chuẩn xác 8.4/10."
+        }
+      }
+    },
+    {
+      "id": "eval_20_change_date_policy",
+      "question": "Khách có thể đổi ngày lưu trú thay vì hủy phòng không và có mất phí không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách thay đổi ngày đặt phòng"
+      ],
+      "lexical": {
+        "titles": [
+          "Chính sách thay đổi ngày đặt phòng",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Quy trình Gia Hạn Lưu Trú"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.7,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.5,
+          "answer_correctness": 8.5,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 8.5/10, Độ chuẩn xác 8.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách thay đổi ngày đặt phòng",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)",
+          "Quy trình Gia Hạn Lưu Trú"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.7,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.5,
+          "answer_correctness": 8.5,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 8.5/10, Độ chuẩn xác 8.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_21_cancel_group_booking",
+      "question": "Đối với khách đoàn từ 5 phòng trở lên, thời hạn hủy phòng miễn phí là bao lâu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy trình Phục vụ Khách đoàn"
+      ],
+      "lexical": {
+        "titles": [
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Dự báo thời tiết Hà Nội và Tư vấn lịch trình du lịch"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.1,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.2,
+          "answer_correctness": 8.2,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.2/10, Độ chuẩn xác 8.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Hủy phòng"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.1,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.2,
+          "answer_correctness": 8.2,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.2/10, Độ chuẩn xác 8.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_22_deposit_guarantee",
+      "question": "Khách đặt cọc giữ phòng bằng chuyển khoản thì cần cọc bao nhiêu % giá trị đặt phòng?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách Đặt cọc Đảm bảo Đặt phòng"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách Đặt cọc Đảm bảo Đặt phòng",
+          "Quy Định Phụ Thu",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 7,
+          "context_recall": 7.7,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_23_pet_dogs_cats",
+      "question": "Khách sạn có cho phép mang chó mèo vào phòng ngủ không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định mang thú cưng",
+        "Quy định về Thú cưng và Động vật nuôi trong khách sạn"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định mang thú cưng",
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.3,
+          "context_recall": 8.5,
+          "faithfulness": 8.7,
+          "response_relevancy": 8,
+          "answer_correctness": 8.5,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 8/10, Độ chuẩn xác 8.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định mang thú cưng",
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy Định Khách Ngoài Phòng"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.3,
+          "context_recall": 8.7,
+          "faithfulness": 8.7,
+          "response_relevancy": 8,
+          "answer_correctness": 8.5,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 8/10, Độ chuẩn xác 8.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_24_pet_hamster",
+      "question": "Mình muốn mang một con chuột hamster nhỏ xíu vào phòng thôi, có được không? Vì nó không phải chó mèo.",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+        "Quy định mang thú cưng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy định mang thú cưng"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 8.2,
+          "faithfulness": 7.5,
+          "response_relevancy": 7.1,
+          "answer_correctness": 8.4,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 7.1/10, Độ chuẩn xác 8.4/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy định mang thú cưng",
+          "Quy Định Khách Ngoài Phòng"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 8.2,
+          "faithfulness": 7.5,
+          "response_relevancy": 7.1,
+          "answer_correctness": 8.4,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 7.1/10, Độ chuẩn xác 8.4/10."
+        }
+      }
+    },
+    {
+      "id": "eval_25_pet_fine",
+      "question": "Nếu cố tình giấu thú cưng mang vào phòng thì khách bị phạt bao nhiêu tiền?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định mang thú cưng",
+        "Quy định về Thú cưng và Động vật nuôi trong khách sạn"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định mang thú cưng",
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 8.5,
+          "faithfulness": 7.5,
+          "response_relevancy": 6.9,
+          "answer_correctness": 8.2,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 6.9/10, Độ chuẩn xác 8.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định mang thú cưng",
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy Định Phụ Thu"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 7,
+          "context_recall": 8.5,
+          "faithfulness": 7.5,
+          "response_relevancy": 6.9,
+          "answer_correctness": 8.2,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 6.9/10, Độ chuẩn xác 8.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_26_pet_guide_dog",
+      "question": "Khách khiếm thị có chó dẫn đường đi cùng thì khách sạn có tiếp nhận không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định mang thú cưng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy định mang thú cưng"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.2,
+          "faithfulness": 8.7,
+          "response_relevancy": 7.6,
+          "answer_correctness": 8.4,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 7.6/10, Độ chuẩn xác 8.4/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy định mang thú cưng"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.2,
+          "faithfulness": 8.7,
+          "response_relevancy": 7.6,
+          "answer_correctness": 8.4,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 7.6/10, Độ chuẩn xác 8.4/10."
+        }
+      }
+    },
+    {
+      "id": "eval_27_pet_birds_reptiles",
+      "question": "Tôi có thể mang lồng chim cảnh hoặc trăn cảnh nhỏ vào phòng khách sạn được không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định về Thú cưng và Động vật nuôi trong khách sạn"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy định mang thú cưng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.2,
+          "faithfulness": 8.7,
+          "response_relevancy": 7.6,
+          "answer_correctness": 8.3,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 7.6/10, Độ chuẩn xác 8.3/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy định mang thú cưng",
+          "Quy Định Khách Ngoài Phòng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.6,
+          "answer_correctness": 8.3,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.6/10, Độ chuẩn xác 8.3/10."
+        }
+      }
+    },
+    {
+      "id": "eval_28_pet_boarding_support",
+      "question": "Khách sạn có dịch vụ gửi thú cưng hộ khách hoặc liên hệ cơ sở thú y lân cận không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định mang thú cưng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định mang thú cưng",
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng",
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.5,
+          "faithfulness": 8.9,
+          "response_relevancy": 6.9,
+          "answer_correctness": 8,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.9/10, Tính liên quan 6.9/10, Độ chuẩn xác 8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định mang thú cưng",
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.5,
+          "faithfulness": 8.9,
+          "response_relevancy": 6.9,
+          "answer_correctness": 8,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 6.9/10, Độ chuẩn xác 8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_29_smoking_room",
+      "question": "Khách sạn có phòng nào cho phép hút thuốc lá bên trong không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định hút thuốc",
+        "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định hút thuốc",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 9,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.8,
+          "answer_correctness": 8.8,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.8/10, Độ chuẩn xác 8.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định hút thuốc",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 9,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.8,
+          "answer_correctness": 8.8,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.8/10, Độ chuẩn xác 8.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_30_vaping_pod",
+      "question": "Khách sạn có phòng nào cho phép hút thuốc lá điện tử (vape) bên trong không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+        "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.3,
+          "context_recall": 8.9,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.1,
+          "answer_correctness": 9,
+          "overall_score": 8.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 8.1/10, Độ chuẩn xác 9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.3,
+          "context_recall": 8.9,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.1,
+          "answer_correctness": 9,
+          "overall_score": 8.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 8.1/10, Độ chuẩn xác 9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_31_smoking_fine",
+      "question": "Phụ phí phạt hút thuốc lá hoặc thuốc lá điện tử trong phòng là bao nhiêu tiền?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định hút thuốc",
+        "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.4,
+          "answer_correctness": 8.2,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.4/10, Độ chuẩn xác 8.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.4,
+          "answer_correctness": 8.2,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.4/10, Độ chuẩn xác 8.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_32_smoking_area",
+      "question": "Nếu tôi muốn hút thuốc thì khách sạn có khu vực hút thuốc riêng ở đâu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+        "Quy định hút thuốc"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 8.2,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.5,
+          "answer_correctness": 8.2,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.5/10, Độ chuẩn xác 8.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 8.2,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.5,
+          "answer_correctness": 8.2,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.5/10, Độ chuẩn xác 8.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_33_smoking_detector",
+      "question": "Hệ thống báo khói trong phòng ngủ có tự động phát hiện khói vape và thuốc lá không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 7.7,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.8,
+          "answer_correctness": 7.9,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.8/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 7.7,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.8,
+          "answer_correctness": 7.9,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.8/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_34_iqos_heated_tobacco",
+      "question": "Thuốc lá nung nóng IQOS có được hút trong phòng không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.2,
+          "context_recall": 8.3,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.8,
+          "answer_correctness": 8.3,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.8/10, Độ chuẩn xác 8.3/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng",
+          "Quy định hút thuốc"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.2,
+          "context_recall": 8.3,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.8,
+          "answer_correctness": 8.3,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.8/10, Độ chuẩn xác 8.3/10."
+        }
+      }
+    },
+    {
+      "id": "eval_35_pool_hours",
+      "question": "Cho hỏi bể bơi vô cực của khách sạn mở cửa từ mấy giờ đến mấy giờ?",
+      "answerable": true,
+      "expectedContexts": [
+        "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+        "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+      ],
+      "lexical": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.6,
+          "faithfulness": 8.6,
+          "response_relevancy": 8.5,
+          "answer_correctness": 8.6,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.6/10, Tính liên quan 8.5/10, Độ chuẩn xác 8.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.6,
+          "faithfulness": 8.6,
+          "response_relevancy": 8.5,
+          "answer_correctness": 8.6,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.6/10, Tính liên quan 8.5/10, Độ chuẩn xác 8.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_36_pool_ticket_fee",
+      "question": "Khách đang lưu trú tại khách sạn có phải mua vé vào bơi tại bể bơi vô cực không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)"
+      ],
+      "lexical": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.5,
+          "faithfulness": 8.6,
+          "response_relevancy": 8.5,
+          "answer_correctness": 8.4,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.6/10, Tính liên quan 8.5/10, Độ chuẩn xác 8.4/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.5,
+          "faithfulness": 8.6,
+          "response_relevancy": 8.5,
+          "answer_correctness": 8.4,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.6/10, Tính liên quan 8.5/10, Độ chuẩn xác 8.4/10."
+        }
+      }
+    },
+    {
+      "id": "eval_37_pool_amenities",
+      "question": "Khu vực bể bơi vô cực tầng thượng có sẵn khăn tắm và nhân viên cứu hộ không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)"
+      ],
+      "lexical": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.6,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.6,
+          "answer_correctness": 8.7,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 8.6/10, Độ chuẩn xác 8.7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.6,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.6,
+          "answer_correctness": 8.7,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 8.6/10, Độ chuẩn xác 8.7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_38_gym_hours",
+      "question": "Phòng tập Gym của khách sạn mở cửa vào khung giờ nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Hồ bơi và Phòng tập Gym"
+      ],
+      "lexical": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Hồ bơi và Phòng tập Gym"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.333,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 7.9,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.3,
+          "answer_correctness": 7.5,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 8.3/10, Độ chuẩn xác 7.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Hồ bơi và Phòng tập Gym"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.333,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 7.9,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.3,
+          "answer_correctness": 7.5,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 8.3/10, Độ chuẩn xác 7.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_39_gym_fee",
+      "question": "Phòng tập Gym có tính phí đối với khách lưu trú không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Hồ bơi và Phòng tập Gym"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình Gia Hạn Lưu Trú"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 7.1,
+          "context_recall": 7.6,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.3,
+          "answer_correctness": 8.1,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.3/10, Độ chuẩn xác 8.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình Gia Hạn Lưu Trú",
+          "Hồ bơi và Phòng tập Gym",
+          "Chính sách lưu trú cho trẻ em"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.3,
+          "answer_correctness": 8.1,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 8.3/10, Độ chuẩn xác 8.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_40_spa_hotstone_pricing",
+      "question": "Giá dịch vụ massage đá nóng bazan tại Royal Spa là bao nhiêu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.8,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.6,
+          "answer_correctness": 8.9,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.6/10, Độ chuẩn xác 8.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.8,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.6,
+          "answer_correctness": 8.9,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.6/10, Độ chuẩn xác 8.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_41_spa_sauna_steam",
+      "question": "Royal Spa có phòng xông hơi khô (Sauna) và xông hơi ướt (Steam bath) không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng",
+        "Dịch vụ Spa & Wellness"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 0.5,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.5,
+          "context_recall": 8.4,
+          "faithfulness": 8.8,
+          "response_relevancy": 9.4,
+          "answer_correctness": 8.5,
+          "overall_score": 8.9,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 9.4/10, Độ chuẩn xác 8.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 0.5,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.5,
+          "context_recall": 8.4,
+          "faithfulness": 8.8,
+          "response_relevancy": 9.4,
+          "answer_correctness": 8.5,
+          "overall_score": 8.9,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 9.4/10, Độ chuẩn xác 8.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_42_spa_mud_bath_info",
+      "question": "Khách sạn có dịch vụ spa, massage đá nóng hay tắm bùn trọn gói không em?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.5,
+          "faithfulness": 8.8,
+          "response_relevancy": 9,
+          "answer_correctness": 8.6,
+          "overall_score": 8.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 9/10, Độ chuẩn xác 8.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.5,
+          "faithfulness": 8.8,
+          "response_relevancy": 9,
+          "answer_correctness": 8.6,
+          "overall_score": 8.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 9/10, Độ chuẩn xác 8.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_43_spa_hours",
+      "question": "Royal Spa mở cửa phục vụ khách từ mấy giờ đến mấy giờ?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ Spa & Wellness"
+      ],
+      "lexical": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_44_pool_children_policy",
+      "question": "Trẻ em có được phép bơi tại bể bơi vô cực tầng thượng không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)"
+      ],
+      "lexical": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.3,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.4,
+          "answer_correctness": 7.5,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.4/10, Độ chuẩn xác 7.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Thông tin về Bãi đáp trực thăng (Helipad) trên tầng thượng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 7.4,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.4,
+          "answer_correctness": 7.5,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 8.4/10, Độ chuẩn xác 7.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_45_spa_vip_discount",
+      "question": "Hội viên hạng Vàng và Kim Cương có được giảm giá dịch vụ Spa không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chương trình thành viên Grand Palace"
+      ],
+      "lexical": {
+        "titles": [
+          "Chương trình thành viên Grand Palace",
+          "Dịch vụ Spa & Wellness",
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.3,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.2,
+          "answer_correctness": 8,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.2/10, Độ chuẩn xác 8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chương trình thành viên Grand Palace",
+          "Dịch vụ Spa & Wellness",
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.3,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.2,
+          "answer_correctness": 8,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.2/10, Độ chuẩn xác 8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_46_pool_rooftop_bar",
+      "question": "Cạnh bể bơi vô cực tầng thượng có quầy bar phục vụ cocktail và đồ uống không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+      ],
+      "lexical": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.1,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.7,
+          "answer_correctness": 8.2,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 8.7/10, Độ chuẩn xác 8.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.1,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.7,
+          "answer_correctness": 8.2,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 8.7/10, Độ chuẩn xác 8.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_47_breakfast_buffet_time",
+      "question": "Khách sạn phục vụ buffet sáng vào khung giờ nào, tại đâu và giá bao nhiêu một người?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ ăn sáng và Nhà hàng"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ ăn sáng và Nhà hàng",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+          "Bảng giá và Dịch vụ xe Limousine VIP 9 chỗ đưa đón sân bay"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.7,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.3,
+          "answer_correctness": 8.6,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.3/10, Độ chuẩn xác 8.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ ăn sáng và Nhà hàng",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.9,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.3,
+          "answer_correctness": 8.6,
+          "overall_score": 8.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 8.3/10, Độ chuẩn xác 8.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_48_breakfast_included",
+      "question": "Làm sao để biết phòng tôi đặt đã bao gồm ăn sáng buffet miễn phí hay chưa?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ ăn sáng và Nhà hàng"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ ăn sáng và Nhà hàng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 7.3,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.6,
+          "answer_correctness": 7.8,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 8.6/10, Độ chuẩn xác 7.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ ăn sáng và Nhà hàng",
+          "Chính sách Đặt cọc Đảm bảo Đặt phòng",
+          "Quy định Sử dụng Minibar"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 7.8,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.6,
+          "answer_correctness": 7.8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 8.6/10, Độ chuẩn xác 7.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_49_room_service_hours",
+      "question": "Dịch vụ phục vụ ăn uống tại phòng (Room Service) có mở 24/24 không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ phòng (Room Service)"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ phòng (Room Service)",
+          "Dịch vụ ăn sáng và Nhà hàng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.3,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.3,
+          "answer_correctness": 8,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 8.3/10, Độ chuẩn xác 8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ phòng (Room Service)",
+          "Dịch vụ ăn sáng và Nhà hàng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.3,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.3,
+          "answer_correctness": 8,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 8.3/10, Độ chuẩn xác 8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_50_minibar_complimentary",
+      "question": "Những đồ uống nào trong minibar của phòng ngủ là hoàn toàn miễn phí?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định sử dụng và thanh toán Minibar",
+        "Quy Định Sử Dụng Minibar"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình kiểm kê và tính phí Minibar"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 6.8,
+          "context_recall": 7.8,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình kiểm kê và tính phí Minibar",
+          "Quy Định Sử Dụng Minibar",
+          "Quy định Sử dụng Minibar"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.1,
+          "faithfulness": 9.5,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.5/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_51_restaurant_specialties",
+      "question": "Nhà hàng Grand Palace có phục vụ các món ăn đặc sản vùng miền Thái Nguyên không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ ăn sáng và Nhà hàng"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ ăn sáng và Nhà hàng",
+          "Tour tham quan Thái Nguyên — Vùng chè nổi tiếng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.1,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.6,
+          "answer_correctness": 7.9,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 8.6/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ ăn sáng và Nhà hàng",
+          "Tour tham quan Thái Nguyên — Vùng chè nổi tiếng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.1,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.6,
+          "answer_correctness": 7.9,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 8.6/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_52_minibar_settlement",
+      "question": "Tiền đồ uống minibar được thanh toán vào lúc nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy trình kiểm kê và tính phí Minibar",
+        "Quy trình check-out cho nhân viên lễ tân"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định sử dụng và thanh toán Minibar",
+          "Phương thức thanh toán",
+          "Quy định Sử dụng Minibar"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định sử dụng và thanh toán Minibar",
+          "Quy định Sử dụng Minibar",
+          "Phương thức thanh toán"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.2,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_53_vegetarian_food",
+      "question": "Nhà hàng có phục vụ các món ăn chay thanh đạm không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ ăn sáng và Nhà hàng"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ ăn sáng và Nhà hàng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.5,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.3,
+          "answer_correctness": 7.8,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.3/10, Độ chuẩn xác 7.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ ăn sáng và Nhà hàng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.5,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.3,
+          "answer_correctness": 7.8,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.3/10, Độ chuẩn xác 7.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_54_room_service_order",
+      "question": "Muốn gọi đồ ăn lên phòng tôi cần bấm phím số mấy trên điện thoại bàn?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ phòng (Room Service)"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.3,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.3/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ WiFi"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6.7,
+          "context_recall": 7.4,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.3,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.3/10."
+        }
+      }
+    },
+    {
+      "id": "eval_55_laundry_express_time",
+      "question": "Dịch vụ giặt ủi đồ nhanh của khách sạn mất mấy tiếng và có phụ phí gì không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ Giặt là"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ Giặt là",
+          "Dịch vụ phòng (Room Service)",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 9.1,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.7,
+          "answer_correctness": 8.9,
+          "overall_score": 8.9,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.9/10, Tính liên quan 8.7/10, Độ chuẩn xác 8.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ Giặt là",
+          "Dịch vụ phòng (Room Service)",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 9.1,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.7,
+          "answer_correctness": 8.9,
+          "overall_score": 8.9,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 8.7/10, Độ chuẩn xác 8.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_56_laundry_standard_time",
+      "question": "Dịch vụ giặt là tiêu chuẩn trả đồ cho khách trong vòng bao lâu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ Giặt là"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ Giặt là",
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Dịch vụ phòng (Room Service)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.1,
+          "faithfulness": 9,
+          "response_relevancy": 8.3,
+          "answer_correctness": 8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9/10, Tính liên quan 8.3/10, Độ chuẩn xác 8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ Giặt là",
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng",
+          "Dịch vụ phòng (Room Service)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 8.1,
+          "faithfulness": 9,
+          "response_relevancy": 8.3,
+          "answer_correctness": 8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9/10, Tính liên quan 8.3/10, Độ chuẩn xác 8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_57_laundry_diamond_benefit",
+      "question": "Khách hàng hạng Kim Cương có được miễn phí giặt là không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ Giặt là",
+        "Chương trình thành viên Grand Palace"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình đón tiếp khách VIP và Kim Cương"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 7.5,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.6,
+          "answer_correctness": 7.7,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.6/10, Độ chuẩn xác 7.7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình đón tiếp khách VIP và Kim Cương",
+          "Dịch vụ Giặt là",
+          "Chương trình thành viên Grand Palace"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.3,
+          "context_recall": 8.1,
+          "faithfulness": 8.9,
+          "response_relevancy": 7.6,
+          "answer_correctness": 7.7,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 7.6/10, Độ chuẩn xác 7.7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_58_limousine_airport_pricing",
+      "question": "Tôi muốn đặt dịch vụ đưa đón bằng xe limousine 9 chỗ từ sân bay về khách sạn thì giá thế nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+        "Bảng giá và Dịch vụ xe Limousine VIP 9 chỗ đưa đón sân bay"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+          "Bảng giá và Dịch vụ xe Limousine VIP 9 chỗ đưa đón sân bay"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.8,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.7,
+          "answer_correctness": 8.8,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.7/10, Độ chuẩn xác 8.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+          "Bảng giá và Dịch vụ xe Limousine VIP 9 chỗ đưa đón sân bay"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.9,
+          "context_recall": 8.8,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.7,
+          "answer_correctness": 8.8,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 7.7/10, Độ chuẩn xác 8.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_59_limousine_booking_notice",
+      "question": "Khách cần đặt trước xe Limousine đón sân bay bao lâu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ"
+      ],
+      "lexical": {
+        "titles": [
+          "Bảng giá và Dịch vụ xe Limousine VIP 9 chỗ đưa đón sân bay",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+          "Dịch vụ đưa đón và vận chuyển"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.4,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.9,
+          "answer_correctness": 7.7,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 8.9/10, Độ chuẩn xác 7.7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Bảng giá và Dịch vụ xe Limousine VIP 9 chỗ đưa đón sân bay",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+          "Dịch vụ đưa đón và vận chuyển"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 8.4,
+          "faithfulness": 8.8,
+          "response_relevancy": 8.9,
+          "answer_correctness": 7.7,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.8/10, Tính liên quan 8.9/10, Độ chuẩn xác 7.7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_60_helipad_rooftop_fact",
+      "question": "Khách sạn mình có bãi đáp trực thăng ở tầng thượng cho khách VIP không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Thông tin về Bãi đáp trực thăng (Helipad) trên tầng thượng",
+        "Thông tin Bãi đáp trực thăng (Helipad) và Đón tiễn VIP"
+      ],
+      "lexical": {
+        "titles": [
+          "Thông tin về Bãi đáp trực thăng (Helipad) trên tầng thượng",
+          "Thông tin Bãi đáp trực thăng (Helipad) và Đón tiễn VIP"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.6,
+          "faithfulness": 8.7,
+          "response_relevancy": 7.6,
+          "answer_correctness": 8.6,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 7.6/10, Độ chuẩn xác 8.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thông tin về Bãi đáp trực thăng (Helipad) trên tầng thượng",
+          "Thông tin Bãi đáp trực thăng (Helipad) và Đón tiễn VIP"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 2,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.6,
+          "faithfulness": 8.7,
+          "response_relevancy": 7.6,
+          "answer_correctness": 8.6,
+          "overall_score": 8.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 7.6/10, Độ chuẩn xác 8.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_61_parking_fee",
+      "question": "Khách sạn có chỗ đỗ xe ô tô miễn phí cho khách lưu trú không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ bãi đỗ xe"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ bãi đỗ xe",
+          "Chính sách lưu trú cho trẻ em",
+          "Quy trình Gia Hạn Lưu Trú"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.4,
+          "context_recall": 8.2,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.7,
+          "answer_correctness": 7.9,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.9/10, Tính liên quan 8.7/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ bãi đỗ xe",
+          "Chính sách lưu trú cho trẻ em",
+          "Quy Định Khách Ngoài Phòng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.4,
+          "context_recall": 8.3,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.7,
+          "answer_correctness": 7.9,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 8.7/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_62_ev_charging",
+      "question": "Khách sạn có trạm sạc xe điện VinFast / EV tại bãi đỗ xe không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ bãi đỗ xe"
+      ],
+      "lexical": {
+        "titles": [
+          "Dịch vụ bãi đỗ xe"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6.8,
+          "context_recall": 7.2,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.1,
+          "answer_correctness": 7.2,
+          "overall_score": 7.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.1/10, Độ chuẩn xác 7.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ bãi đỗ xe",
+          "Phạm vi hỗ trợ thông tin tài chính và Giá cổ phiếu (Vingroup / VIC)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 7.1,
+          "context_recall": 7.8,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.1,
+          "answer_correctness": 7.2,
+          "overall_score": 7.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.1/10, Độ chuẩn xác 7.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_63_paris_flight_duration",
+      "question": "Thủ đô của nước Pháp là gì và từ khách sạn bay sang đó mất bao lâu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Thông tin Thủ đô nước Pháp (Paris) và Thời gian bay từ Việt Nam"
+      ],
+      "lexical": {
+        "titles": [
+          "Thông tin Thủ đô nước Pháp (Paris) và Thời gian bay từ Việt Nam",
+          "Thông tin về Thủ đô nước Pháp (Paris) và Thời gian bay từ Việt Nam"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.9,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.7,
+          "answer_correctness": 8.8,
+          "overall_score": 8.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.9/10, Tính liên quan 8.7/10, Độ chuẩn xác 8.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thông tin Thủ đô nước Pháp (Paris) và Thời gian bay từ Việt Nam",
+          "Thông tin về Thủ đô nước Pháp (Paris) và Thời gian bay từ Việt Nam"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 8.9,
+          "faithfulness": 8.9,
+          "response_relevancy": 8.7,
+          "answer_correctness": 8.8,
+          "overall_score": 8.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 8.7/10, Độ chuẩn xác 8.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_64_motorcycle_rental",
+      "question": "Khách sạn có hỗ trợ khách thuê xe máy tự lái để dạo quanh thành phố không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ đưa đón và vận chuyển"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.3,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.3/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Phạm vi hỗ trợ thông tin tài chính và Giá cổ phiếu (Vingroup / VIC)"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6.7,
+          "context_recall": 7.5,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.3,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.3/10."
+        }
+      }
+    },
+    {
+      "id": "eval_65_room_types_list",
+      "question": "Khách sạn Grand Palace hiện có những loại phòng nghỉ nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Các loại phòng và giá"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8.2/10, Độ chuẩn xác 7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách hủy đặt phòng và hoàn tiền"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6.7,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8.2/10, Độ chuẩn xác 7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_66_room_deluxe_price",
+      "question": "Phòng Deluxe City View có diện tích bao nhiêu m2 và giá niêm yết khoảng bao nhiêu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Các loại phòng và giá"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_67_president_suite_perks",
+      "question": "Phòng Presidential Suite (Phòng Tổng Thống) có những tiện ích đặc biệt nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Các loại phòng và giá",
+        "Quy định và Đặc quyền Phòng VIP"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.2,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.2,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_68_children_bed_policy",
+      "question": "Trẻ em 8 tuổi ở cùng phòng với bố mẹ có bị phụ thu không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chính sách lưu trú cho trẻ em",
+        "Quy Định Phụ Thu"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách lưu trú cho trẻ em",
+          "Chính sách Trả phòng muộn",
+          "Quy định Trả phòng Muộn (Late Checkout)"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 0.5,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 7.8,
+          "faithfulness": 9.5,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.5/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_69_extra_bed_price",
+      "question": "Giá kê thêm một giường phụ (extra bed) trong phòng là bao nhiêu tiền một đêm?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy Định Phụ Thu"
+      ],
+      "lexical": {
+        "titles": [
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6.8,
+          "context_recall": 7.5,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_70_tv_smart_channels",
+      "question": "TV trong phòng khách sạn có kết nối truyền hình vệ tinh và Youtube/Netflix không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định về Tiêu chuẩn và Vận hành TV trong phòng"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.1,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_71_wifi_speed_password",
+      "question": "Mật khẩu WiFi khách sạn là gì và tốc độ mạng thế nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Dịch vụ WiFi",
+        "Quy định về Dịch vụ Wi-Fi trong phòng"
+      ],
+      "lexical": {
+        "titles": [],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ WiFi"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 0.5,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 8,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_72_hot_water_system",
+      "question": "Hệ thống nước nóng trong phòng tắm vận hành thế nào, có cần bật bình nóng lạnh không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy định về Hệ thống Nước Nóng trong phòng tắm"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định về Hệ thống Nước Nóng trong phòng tắm",
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 7.6,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.4,
+          "answer_correctness": 7.7,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.4/10, Độ chuẩn xác 7.7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định về Hệ thống Nước Nóng trong phòng tắm",
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.5,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 7.6,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.4,
+          "answer_correctness": 7.7,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.4/10, Độ chuẩn xác 7.7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_73_tour_thai_nguyen_tea",
+      "question": "Khách sạn có tour tham quan đồi chè Thái Nguyên không em?",
+      "answerable": true,
+      "expectedContexts": [
+        "Tour tham quan Thái Nguyên — Vùng chè nổi tiếng"
+      ],
+      "lexical": {
+        "titles": [
+          "Tour tham quan Thái Nguyên — Vùng chè nổi tiếng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.2,
+          "context_recall": 7.9,
+          "faithfulness": 8.7,
+          "response_relevancy": 9.1,
+          "answer_correctness": 8.1,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 9.1/10, Độ chuẩn xác 8.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Tour tham quan Thái Nguyên — Vùng chè nổi tiếng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.2,
+          "context_recall": 7.9,
+          "faithfulness": 8.7,
+          "response_relevancy": 9.1,
+          "answer_correctness": 8.1,
+          "overall_score": 8.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 9.1/10, Độ chuẩn xác 8.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_74_tour_nui_coc_lake",
+      "question": "Tour du lịch Hồ Núi Cốc của khách sạn gồm những hoạt động gì?",
+      "answerable": true,
+      "expectedContexts": [
+        "Tour Hồ Núi Cốc — Thiên nhiên thơ mộng"
+      ],
+      "lexical": {
+        "titles": [
+          "Tour Hồ Núi Cốc — Thiên nhiên thơ mộng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 7.7,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.9,
+          "answer_correctness": 7.8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 8.9/10, Độ chuẩn xác 7.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Tour Hồ Núi Cốc — Thiên nhiên thơ mộng"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9.1,
+          "context_recall": 7.7,
+          "faithfulness": 8.7,
+          "response_relevancy": 8.9,
+          "answer_correctness": 7.8,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 8.9/10, Độ chuẩn xác 7.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_75_tour_atk_dinh_hoa",
+      "question": "Tour ATK Định Hóa khởi hành lúc mấy giờ và có hướng dẫn viên không?",
+      "answerable": true,
+      "expectedContexts": [
+        "Tour ATK Định Hóa — Di tích lịch sử"
+      ],
+      "lexical": {
+        "titles": [
+          "Tour ATK Định Hóa — Di tích lịch sử"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.7,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.4,
+          "answer_correctness": 7.9,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.4/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Tour ATK Định Hóa — Di tích lịch sử"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.7,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.4,
+          "answer_correctness": 7.9,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.4/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_76_membership_tiers",
+      "question": "Chương trình thành viên Grand Palace có những hạng thẻ nào và tích điểm ra sao?",
+      "answerable": true,
+      "expectedContexts": [
+        "Chương trình thành viên Grand Palace"
+      ],
+      "lexical": {
+        "titles": [
+          "Chương trình thành viên Grand Palace"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 7.8,
+          "faithfulness": 8.7,
+          "response_relevancy": 7.7,
+          "answer_correctness": 8,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.7/10, Tính liên quan 7.7/10, Độ chuẩn xác 8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chương trình thành viên Grand Palace"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 7.8,
+          "faithfulness": 8.7,
+          "response_relevancy": 7.7,
+          "answer_correctness": 8,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.7/10, Tính liên quan 7.7/10, Độ chuẩn xác 8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_77_lost_and_found_retention",
+      "question": "Đồ vật khách bỏ quên tại phòng được khách sạn lưu kho bảo quản trong bao lâu?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy trình xử lý đồ vật thất lạc / bỏ quên",
+        "Quy Định Về Tài Sản Thất Lạc"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình xử lý đồ vật thất lạc / bỏ quên"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 0.5,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 8.1,
+          "faithfulness": 7.5,
+          "response_relevancy": 6.9,
+          "answer_correctness": 8.1,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 6.9/10, Độ chuẩn xác 8.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình xử lý đồ vật thất lạc / bỏ quên"
+        ],
+        "ir": {
+          "recall1": 0.5,
+          "recall3": 0.5,
+          "precision3": 1,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 2
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 8.1,
+          "faithfulness": 7.5,
+          "response_relevancy": 6.9,
+          "answer_correctness": 8.1,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 6.9/10, Độ chuẩn xác 8.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_78_damaged_property_fee",
+      "question": "Nếu khách vô ý làm vỡ cốc thủy tinh hoặc làm ố bẩn ga trải giường thì xử lý thế nào?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy trình xử lý khi khách làm hỏng tài sản"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy trình xử lý khi khách làm hỏng tài sản",
+          "Quy trình xử lý khiếu nại và phàn nàn của khách",
+          "Xử lý Trường hợp Khách hàng Không có Giấy tờ Tùy thân"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 7.9,
+          "faithfulness": 9.8,
+          "response_relevancy": 8.1,
+          "answer_correctness": 7.1,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8.1/10, Độ chuẩn xác 7.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình xử lý khi khách làm hỏng tài sản",
+          "Quy trình xử lý khiếu nại và phàn nàn của khách",
+          "Xử lý Trường hợp Khách hàng Không có Giấy tờ Tùy thân"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.667,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 7.9,
+          "faithfulness": 9.8,
+          "response_relevancy": 8.1,
+          "answer_correctness": 7.1,
+          "overall_score": 8.3,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8.1/10, Độ chuẩn xác 7.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_79_noise_regulations",
+      "question": "Quy định về giữ gìn trật tự và chống ồn ban đêm của khách sạn bắt đầu từ mấy giờ?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy Định Về Tiếng Ồn"
+      ],
+      "lexical": {
+        "titles": [
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Quy Định Về Tiếng Ồn",
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 0.5,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.7,
+          "context_recall": 7.7,
+          "faithfulness": 8.8,
+          "response_relevancy": 6.9,
+          "answer_correctness": 7.5,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 6.9/10, Độ chuẩn xác 7.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy Định Về Tiếng Ồn",
+          "Quy định Hoàn tiền khi Hủy phòng trước 12 tiếng so với giờ Check-in",
+          "Chính sách Check-out Muộn (Late Check-out)"
+        ],
+        "ir": {
+          "recall1": 1,
+          "recall3": 1,
+          "precision3": 0.333,
+          "reciprocalRank": 1,
+          "hitsAt3": 1,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.6,
+          "faithfulness": 7.5,
+          "response_relevancy": 6.9,
+          "answer_correctness": 7.5,
+          "overall_score": 7.6,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 6.9/10, Độ chuẩn xác 7.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_80_vat_invoice_issuance",
+      "question": "Khách muốn xuất hóa đơn VAT giá trị gia tăng thì cần cung cấp thông tin gì?",
+      "answerable": true,
+      "expectedContexts": [
+        "Quy trình check-out cho nhân viên lễ tân"
+      ],
+      "lexical": {
+        "titles": [
+          "Phạm vi cung cấp thông tin tài chính và Giá cổ phiếu (Vingroup / VIC)",
+          "Phạm vi hỗ trợ thông tin tài chính và Giá cổ phiếu (Vingroup / VIC)"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 7,
+          "context_recall": 7.4,
+          "faithfulness": 7.5,
+          "response_relevancy": 7.1,
+          "answer_correctness": 7.6,
+          "overall_score": 7.3,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 7.1/10, Độ chuẩn xác 7.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Phạm vi cung cấp thông tin tài chính và Giá cổ phiếu (Vingroup / VIC)",
+          "Phạm vi hỗ trợ thông tin tài chính và Giá cổ phiếu (Vingroup / VIC)",
+          "Phương thức thanh toán"
+        ],
+        "ir": {
+          "recall1": 0,
+          "recall3": 0,
+          "precision3": 0,
+          "reciprocalRank": 0,
+          "hitsAt3": 0,
+          "totalExpected": 1
+        },
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 8.2,
+          "faithfulness": 8.9,
+          "response_relevancy": 7.1,
+          "answer_correctness": 7.6,
+          "overall_score": 8.2,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 7.1/10, Độ chuẩn xác 7.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_81_casino",
+      "question": "Khách sạn mình có sòng bạc casino hoạt động thâu đêm cho khách nước ngoài không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 8.2,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 8.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 8.2,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 8.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_82_gas_cooking",
+      "question": "Tôi có thể mang bếp gas mini và bình gas du lịch vào phòng tự nấu lẩu ăn khuya được không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.9,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định sử dụng và thanh toán Minibar",
+          "Dự báo thời tiết Hà Nội và Tư vấn lịch trình du lịch"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 7.5,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.9,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_83_private_beach",
+      "question": "Bãi biển riêng và khu lặn biển ngắm san hô của khách sạn cách sảnh bao xa?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.5,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng",
+          "Thông tin về Bãi đáp trực thăng (Helipad) trên tầng thượng",
+          "Thông tin Bãi đáp trực thăng (Helipad) và Đón tiễn VIP"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 8,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.5,
+          "overall_score": 8.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_84_dryclean_30m",
+      "question": "Khách sạn có dịch vụ giặt hấp áo vest lấy ngay siêu tốc trong 30 phút không em?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Dịch vụ Giặt là",
+          "Dịch vụ phòng (Room Service)"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 7.7,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.8,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ Giặt là",
+          "Dịch vụ phòng (Room Service)"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 7.7,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.8,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_85_tennis_court",
+      "question": "Khách sạn có sân tennis đạt chuẩn quốc tế có dàn đèn để đặt lịch chơi buổi tối không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.9,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.9,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_86_cinema_imax",
+      "question": "Rạp chiếu phim 3D / IMAX nằm ở tầng mấy của khách sạn và giá vé bao nhiêu?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 8.1,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 8.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Pool)",
+          "Dịch vụ Spa & Wellness",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6.9,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 8.1,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 8.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_87_hot_air_balloon",
+      "question": "Khách sạn có tour bay khinh khí cầu ngắm toàn cảnh thành phố Thái Nguyên không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 8.1,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 8.1/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Tour tham quan Thái Nguyên — Vùng chè nổi tiếng",
+          "Thông tin tổng quan, Tiêu chuẩn và Giờ nhận/trả phòng"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6.8,
+          "context_recall": 7.4,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 8.1,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 8.1/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_88_helicopter_charter",
+      "question": "Tôi có thể thuê trực thăng riêng đón từ khuôn viên sảnh khách sạn bay về Hà Nội không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Thông tin Bãi đáp trực thăng (Helipad) và Đón tiễn VIP",
+          "Thông tin về Bãi đáp trực thăng (Helipad) trên tầng thượng",
+          "Dự báo thời tiết Hà Nội và Tư vấn lịch trình du lịch"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 7.9,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.6,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Thông tin Bãi đáp trực thăng (Helipad) và Đón tiễn VIP",
+          "Thông tin về Bãi đáp trực thăng (Helipad) trên tầng thượng",
+          "Dự báo thời tiết Hà Nội và Tư vấn lịch trình du lịch"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 7.2,
+          "context_recall": 7.9,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.6,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_89_supercar_rental",
+      "question": "Khách sạn có dịch vụ cho thuê siêu xe tự lái Lamborghini hay Ferrari không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6.9,
+          "context_recall": 7.3,
+          "faithfulness": 9.8,
+          "response_relevancy": 8.1,
+          "answer_correctness": 7.9,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8.1/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+          "Bảng giá và Dịch vụ xe Limousine VIP 9 chỗ đưa đón sân bay",
+          "Dịch vụ bãi đỗ xe"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6.9,
+          "context_recall": 7.3,
+          "faithfulness": 9.8,
+          "response_relevancy": 8.1,
+          "answer_correctness": 7.9,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8.1/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_90_wild_animal_pet",
+      "question": "Tôi có thể mang trăn cảnh bạch tạng hoặc rồng Nam Mỹ vào nuôi trong phòng không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 7,
+          "context_recall": 8,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.4,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.4/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định về Thú cưng và Động vật nuôi trong khách sạn",
+          "Quy định mang thú cưng"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 7,
+          "context_recall": 8,
+          "faithfulness": 9.8,
+          "response_relevancy": 8,
+          "answer_correctness": 7.4,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 8/10, Độ chuẩn xác 7.4/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_91_snow_skiing",
+      "question": "Khu trượt tuyết nhân tạo mùa hè của khách sạn nằm ở khu vực nào?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 8,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 8/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 8,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 8/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_92_crypto_payment",
+      "question": "Tôi có thể thanh toán tiền phòng bằng tiền điện tử Bitcoin hoặc USDT được không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Phương thức thanh toán",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 7.9,
+          "faithfulness": 8.9,
+          "response_relevancy": 7.1,
+          "answer_correctness": 7.2,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.9/10, Tính liên quan 7.1/10, Độ chuẩn xác 7.2/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy định cấm Hút thuốc lá điện tử (Vape, Pod) trong tất cả các phòng",
+          "Phương thức thanh toán",
+          "Quy định cấm Hút thuốc lá và Thuốc lá điện tử (Vape, Pod) trong phòng"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 9,
+          "context_recall": 7.9,
+          "faithfulness": 8.9,
+          "response_relevancy": 7.1,
+          "answer_correctness": 7.2,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 8.9/10, Tính liên quan 7.1/10, Độ chuẩn xác 7.2/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_93_fireworks_balcony",
+      "question": "Tôi có được tự bắn pháo hoa từ ban công phòng để kỷ niệm sinh nhật không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.4,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.4/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.4,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.4/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_94_river_yacht",
+      "question": "Khách sạn có dịch vụ du thuyền 5 sao dạo chơi trên sông Cầu không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Dịch vụ phòng (Room Service)"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6.8,
+          "context_recall": 7.2,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.1,
+          "answer_correctness": 7.5,
+          "overall_score": 7.4,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.1/10, Độ chuẩn xác 7.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ phòng (Room Service)"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6.8,
+          "context_recall": 7.2,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.1,
+          "answer_correctness": 7.5,
+          "overall_score": 7.4,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.1/10, Độ chuẩn xác 7.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_95_tattoo_service",
+      "question": "Tại Royal Spa có dịch vụ xăm hình nghệ thuật tattoo không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6.9,
+          "context_recall": 7.3,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.5,
+          "overall_score": 7.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Dịch vụ Royal Spa, Massage đá nóng và Thông tin Tắm bùn khoáng",
+          "Dịch vụ Spa & Wellness",
+          "Dịch vụ phòng (Room Service)"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6.9,
+          "context_recall": 7.3,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.5,
+          "overall_score": 7.5,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_96_wave_pool",
+      "question": "Khách sạn có hồ bơi tạo sóng nhân tạo dành cho trẻ em không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Hồ bơi và Phòng tập Gym"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 7,
+          "context_recall": 7.2,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.5,
+          "overall_score": 7.5,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 7.5/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.5/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Hồ bơi và Phòng tập Gym",
+          "Thời gian mở cửa và Tiện ích Bể bơi vô cực (Infinity Sky Pool)"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.8,
+          "faithfulness": 7.5,
+          "response_relevancy": 8.2,
+          "answer_correctness": 7.5,
+          "overall_score": 7.9,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 8.2/10, Độ chuẩn xác 7.5/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_97_driving_license",
+      "question": "Lễ tân khách sạn có dịch vụ thi hộ giấy phép lái xe máy cho khách không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Quy trình check-in cho nhân viên lễ tân",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ",
+          "Dịch vụ bãi đỗ xe"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 7.9,
+          "faithfulness": 9,
+          "response_relevancy": 6.8,
+          "answer_correctness": 7.6,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9/10, Tính liên quan 6.8/10, Độ chuẩn xác 7.6/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Quy trình check-in cho nhân viên lễ tân",
+          "Dịch vụ bãi đỗ xe",
+          "Dịch vụ và Bảng giá đưa đón sân bay bằng xe Limousine VIP 9 chỗ"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 7.9,
+          "faithfulness": 9,
+          "response_relevancy": 6.8,
+          "answer_correctness": 7.6,
+          "overall_score": 8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9/10, Tính liên quan 6.8/10, Độ chuẩn xác 7.6/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_98_hunting_gun",
+      "question": "Khách sạn có cho mượn súng săn để khách đi săn thú trên núi không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.4,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.4/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.4,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.4/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_99_book_3_years_ahead",
+      "question": "Tôi có thể đặt phòng trước 3 năm mà không cần đặt cọc tiền không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Chính sách Đặt cọc Đảm bảo Đặt phòng",
+          "Quy trình Hủy Đặt Phòng"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 8.8,
+          "context_recall": 7.5,
+          "faithfulness": 8.8,
+          "response_relevancy": 7.5,
+          "answer_correctness": 7.7,
+          "overall_score": 8.1,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 8.8/10, Tính liên quan 7.5/10, Độ chuẩn xác 7.7/10."
+        }
+      },
+      "hybrid": {
+        "titles": [
+          "Chính sách hủy đặt phòng và hoàn tiền",
+          "Chính sách Đặt cọc Đảm bảo Đặt phòng",
+          "Chính sách Hủy phòng, Hoàn tiền và Hủy sát giờ (trước 12 tiếng)"
+        ],
+        "ir": null,
+        "ragas": {
+          "context_precision": 8.6,
+          "context_recall": 7.3,
+          "faithfulness": 7.5,
+          "response_relevancy": 7.5,
+          "answer_correctness": 7.7,
+          "overall_score": 7.7,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 7.5/10, Tính liên quan 7.5/10, Độ chuẩn xác 7.7/10."
+        }
+      }
+    },
+    {
+      "id": "eval_noans_100_space_shuttle",
+      "question": "Khách sạn có tour du lịch ngắm cực quang bằng tàu ngầm hoặc phi thuyền không?",
+      "answerable": false,
+      "expectedContexts": [],
+      "lexical": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.9,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Lexical RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.9/10."
+        }
+      },
+      "hybrid": {
+        "titles": [],
+        "ir": null,
+        "ragas": {
+          "context_precision": 6,
+          "context_recall": 7.2,
+          "faithfulness": 9.8,
+          "response_relevancy": 7.9,
+          "answer_correctness": 7.9,
+          "overall_score": 7.8,
+          "reasoning": "Đánh giá độc lập cho Hybrid RRF RAG: Độ trung thực 9.8/10, Tính liên quan 7.9/10, Độ chuẩn xác 7.9/10."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+const express = require('express');
+const router  = express.Router();
+
+// ─── Helper: tạo URL Google Maps từ tọa độ GPS ─────────────────────
+function mapUrl(lat, lng) {
+  return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+}
+function dirUrl(lat, lng) {
+  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+}
+
+// ─── DỮ LIỆU ĐỊA ĐIỂM XUNG QUANH KHÁCH SẠN ──────────────────────
+// Tọa độ GPS chính xác – Thái Nguyên, Việt Nam
+const diaDiemXungQuanh = [
+
+  // ── KHU DU LỊCH / ĐIỂM THAM QUAN ────────────────────────────────
+  {
+    id: 1,
+    ten: 'Khu du lịch Hồ Núi Cốc',
+    loai: 'du-lich',
+    loaiHienThi: 'Khu du lịch',
+    icon: '🏞️',
+    khoangCach: 8.5,
+    thoiGianDiChuyen: 20,
+    danhGia: 4.5,
+    soLuotDanhGia: 1240,
+    diaChi: 'Xã Tân Thái, huyện Đại Từ, Thái Nguyên',
+    moTa: 'Khu du lịch sinh thái nổi tiếng với hồ nước trong xanh, bãi tắm, khu vui chơi và cắm trại. Điểm check-in lý tưởng.',
+    mapUrl: mapUrl(21.6581, 105.6158),
+    directionsUrl: dirUrl(21.6581, 105.6158),
+    anhDaiDien: '🌊',
+    noiBat: true,
+  },
+  {
+    id: 2,
+    ten: 'Đền Đuổm',
+    loai: 'du-lich',
+    loaiHienThi: 'Di tích lịch sử',
+    icon: '🏛️',
+    khoangCach: 12.3,
+    thoiGianDiChuyen: 28,
+    danhGia: 4.3,
+    soLuotDanhGia: 620,
+    diaChi: 'Xã Phú Lạc, huyện Phú Lương, Thái Nguyên',
+    moTa: 'Di tích lịch sử cấp quốc gia thờ Dương Tự Minh – vị tướng anh hùng thời nhà Lý. Kiến trúc cổ kính, linh thiêng.',
+    mapUrl: mapUrl(21.7856, 105.7188),
+    directionsUrl: dirUrl(21.7856, 105.7188),
+    anhDaiDien: '⛩️',
+    noiBat: false,
+  },
+  {
+    id: 3,
+    ten: 'Bảo tàng Văn hóa các dân tộc Việt Nam',
+    loai: 'du-lich',
+    loaiHienThi: 'Bảo tàng',
+    icon: '🏛️',
+    khoangCach: 2.1,
+    thoiGianDiChuyen: 7,
+    danhGia: 4.4,
+    soLuotDanhGia: 850,
+    diaChi: 'Đường Đội Cấn, TP. Thái Nguyên',
+    moTa: 'Bảo tàng trưng bày hiện vật văn hóa 54 dân tộc Việt Nam. Điểm tham quan giáo dục và văn hóa hấp dẫn.',
+    mapUrl: mapUrl(21.5950, 105.8325),
+    directionsUrl: dirUrl(21.5950, 105.8325),
+    anhDaiDien: '🎭',
+    noiBat: false,
+  },
+  {
+    id: 4,
+    ten: 'Núi Văn – Núi Võ',
+    loai: 'du-lich',
+    loaiHienThi: 'Khu tham quan',
+    icon: '⛰️',
+    khoangCach: 5.8,
+    thoiGianDiChuyen: 15,
+    danhGia: 4.2,
+    soLuotDanhGia: 430,
+    diaChi: 'Xã Văn Yên, huyện Đại Từ, Thái Nguyên',
+    moTa: 'Hai ngọn núi nằm cạnh nhau mang tên Văn – Võ, điểm leo núi, ngắm cảnh lý tưởng với không khí trong lành.',
+    mapUrl: mapUrl(21.6400, 105.6620),
+    directionsUrl: dirUrl(21.6400, 105.6620),
+    anhDaiDien: '🌄',
+    noiBat: false,
+  },
+
+  // ── QUÁN ĂN ───────────────────────────────────────────────────────
+  {
+    id: 5,
+    ten: 'Nhà hàng Trống Đồng',
+    loai: 'an-uong',
+    loaiHienThi: 'Nhà hàng',
+    icon: '🍜',
+    khoangCach: 0.8,
+    thoiGianDiChuyen: 3,
+    danhGia: 4.6,
+    soLuotDanhGia: 1890,
+    diaChi: '15 Đường Hoàng Văn Thụ, TP. Thái Nguyên',
+    moTa: 'Nhà hàng hải sản và đặc sản vùng núi nổi tiếng. Thực đơn phong phú, không gian rộng rãi, phù hợp tiệc gia đình.',
+    mapUrl: mapUrl(21.5938, 105.8467),
+    directionsUrl: dirUrl(21.5938, 105.8467),
+    anhDaiDien: '🍱',
+    noiBat: true,
+  },
+  {
+    id: 6,
+    ten: 'Quán Phở Bắc Cụ Hồng',
+    loai: 'an-uong',
+    loaiHienThi: 'Quán ăn',
+    icon: '🍜',
+    khoangCach: 0.5,
+    thoiGianDiChuyen: 2,
+    danhGia: 4.7,
+    soLuotDanhGia: 2340,
+    diaChi: '42 Đường Lương Ngọc Quyến, TP. Thái Nguyên',
+    moTa: 'Quán phở bắc gia truyền hơn 30 năm, nước dùng đậm đà, thịt bò tươi. Mở từ 5h sáng, rất đông khách.',
+    mapUrl: mapUrl(21.5960, 105.8498),
+    directionsUrl: dirUrl(21.5960, 105.8498),
+    anhDaiDien: '🍲',
+    noiBat: false,
+  },
+  {
+    id: 7,
+    ten: 'Cơm Nắm Thái Nguyên – Bà Lan',
+    loai: 'an-uong',
+    loaiHienThi: 'Đặc sản địa phương',
+    icon: '🍚',
+    khoangCach: 1.2,
+    thoiGianDiChuyen: 4,
+    danhGia: 4.5,
+    soLuotDanhGia: 980,
+    diaChi: '28 Đường Minh Cầu, TP. Thái Nguyên',
+    moTa: 'Đặc sản cơm nắm muối vừng truyền thống Thái Nguyên. Bán buổi sáng và trưa, hết sớm nên cần đến sớm.',
+    mapUrl: mapUrl(21.5910, 105.8508),
+    directionsUrl: dirUrl(21.5910, 105.8508),
+    anhDaiDien: '🍙',
+    noiBat: false,
+  },
+  {
+    id: 8,
+    ten: 'BBQ Garden Thái Nguyên',
+    loai: 'an-uong',
+    loaiHienThi: 'Nhà hàng BBQ',
+    icon: '🥩',
+    khoangCach: 1.9,
+    thoiGianDiChuyen: 6,
+    danhGia: 4.4,
+    soLuotDanhGia: 1560,
+    diaChi: '73 Đường Bắc Kạn, TP. Thái Nguyên',
+    moTa: 'Nhà hàng nướng than hoa nổi tiếng. Hải sản, thịt tươi đa dạng. Không gian sân vườn thoáng mát.',
+    mapUrl: mapUrl(21.5947, 105.8484),
+    directionsUrl: dirUrl(21.5947, 105.8484),
+    anhDaiDien: '🔥',
+    noiBat: false,
+  },
+
+  // ── QUÁN CÀ PHÊ ───────────────────────────────────────────────────
+  {
+    id: 9,
+    ten: 'Trà Xanh Café Thái Nguyên',
+    loai: 'ca-phe',
+    loaiHienThi: 'Quán cà phê',
+    icon: '☕',
+    khoangCach: 0.3,
+    thoiGianDiChuyen: 1,
+    danhGia: 4.8,
+    soLuotDanhGia: 3200,
+    diaChi: '5 Đường Hoàng Văn Thụ, TP. Thái Nguyên',
+    moTa: 'Cà phê đặc sản kết hợp trà Thái Nguyên nổi tiếng. View đẹp, không khí yên tĩnh, phù hợp làm việc và gặp gỡ.',
+    mapUrl: mapUrl(21.5936, 105.8462),
+    directionsUrl: dirUrl(21.5936, 105.8462),
+    anhDaiDien: '🍵',
+    noiBat: true,
+  },
+  {
+    id: 10,
+    ten: 'The Coffee House',
+    loai: 'ca-phe',
+    loaiHienThi: 'Quán cà phê',
+    icon: '☕',
+    khoangCach: 0.7,
+    thoiGianDiChuyen: 3,
+    danhGia: 4.3,
+    soLuotDanhGia: 1450,
+    diaChi: '120 Đường Lương Ngọc Quyến, TP. Thái Nguyên',
+    moTa: 'Chuỗi cà phê nổi tiếng với không gian hiện đại, đồ uống đa dạng, WiFi nhanh. Phù hợp làm việc và họp nhóm.',
+    mapUrl: mapUrl(21.5968, 105.8502),
+    directionsUrl: dirUrl(21.5968, 105.8502),
+    anhDaiDien: '☕',
+    noiBat: false,
+  },
+  {
+    id: 11,
+    ten: 'Highlands Coffee – Vincom',
+    loai: 'ca-phe',
+    loaiHienThi: 'Quán cà phê',
+    icon: '☕',
+    khoangCach: 1.1,
+    thoiGianDiChuyen: 4,
+    danhGia: 4.2,
+    soLuotDanhGia: 2100,
+    diaChi: 'Vincom Plaza, 1 Đường Trường Chinh, TP. Thái Nguyên',
+    moTa: 'Cà phê Highlands tại Vincom, view trung tâm thành phố, menu phong phú từ cà phê đến sinh tố, trà.',
+    mapUrl: mapUrl(21.5876, 105.8489),
+    directionsUrl: dirUrl(21.5876, 105.8489),
+    anhDaiDien: '🏪',
+    noiBat: false,
+  },
+
+  // ── TRUNG TÂM THƯƠNG MẠI / CHỢ ───────────────────────────────────
+  {
+    id: 12,
+    ten: 'Vincom Plaza Thái Nguyên',
+    loai: 'mua-sam',
+    loaiHienThi: 'Trung tâm thương mại',
+    icon: '🛒',
+    khoangCach: 1.5,
+    thoiGianDiChuyen: 5,
+    danhGia: 4.5,
+    soLuotDanhGia: 4800,
+    diaChi: '1 Đường Trường Chinh, TP. Thái Nguyên',
+    moTa: 'Trung tâm thương mại lớn nhất Thái Nguyên. Hơn 200 thương hiệu, rạp chiếu phim, khu ăn uống, siêu thị VinMart.',
+    mapUrl: mapUrl(21.5876, 105.8489),
+    directionsUrl: dirUrl(21.5876, 105.8489),
+    anhDaiDien: '🏬',
+    noiBat: true,
+  },
+  {
+    id: 13,
+    ten: 'Chợ Thái Nguyên',
+    loai: 'mua-sam',
+    loaiHienThi: 'Chợ truyền thống',
+    icon: '🏪',
+    khoangCach: 1.0,
+    thoiGianDiChuyen: 4,
+    danhGia: 4.1,
+    soLuotDanhGia: 2300,
+    diaChi: 'Đường Lê Lợi, TP. Thái Nguyên',
+    moTa: 'Chợ trung tâm thành phố, bán đủ mặt hàng: thực phẩm, đặc sản trà Thái, quần áo, hàng lưu niệm. Giá cả phải chăng.',
+    mapUrl: mapUrl(21.5924, 105.8470),
+    directionsUrl: dirUrl(21.5924, 105.8470),
+    anhDaiDien: '🛍️',
+    noiBat: false,
+  },
+  {
+    id: 14,
+    ten: 'Lotte Mart Thái Nguyên',
+    loai: 'mua-sam',
+    loaiHienThi: 'Siêu thị',
+    icon: '🛒',
+    khoangCach: 2.3,
+    thoiGianDiChuyen: 8,
+    danhGia: 4.3,
+    soLuotDanhGia: 1900,
+    diaChi: 'Đường Dương Tự Minh, TP. Thái Nguyên',
+    moTa: 'Siêu thị lớn với đầy đủ hàng hóa, thực phẩm nhập khẩu, khu ăn uống Food Court. Mở cửa đến 22h hàng ngày.',
+    mapUrl: mapUrl(21.5820, 105.8430),
+    directionsUrl: dirUrl(21.5820, 105.8430),
+    anhDaiDien: '🏪',
+    noiBat: false,
+  },
+
+  // ── BỆNH VIỆN ─────────────────────────────────────────────────────
+  {
+    id: 15,
+    ten: 'Bệnh viện Đa khoa TW Thái Nguyên',
+    loai: 'benh-vien',
+    loaiHienThi: 'Bệnh viện',
+    icon: '🏥',
+    khoangCach: 2.8,
+    thoiGianDiChuyen: 8,
+    danhGia: 4.2,
+    soLuotDanhGia: 890,
+    diaChi: 'Đường Lương Ngọc Quyến, TP. Thái Nguyên',
+    moTa: 'Bệnh viện hạng 1 tuyến Trung ương, đội ngũ y bác sĩ có trình độ cao. Khám chữa bệnh đầy đủ chuyên khoa 24/7.',
+    mapUrl: mapUrl(21.5974, 105.8512),
+    directionsUrl: dirUrl(21.5974, 105.8512),
+    anhDaiDien: '🏥',
+    noiBat: false,
+  },
+  {
+    id: 16,
+    ten: 'Bệnh viện A Thái Nguyên',
+    loai: 'benh-vien',
+    loaiHienThi: 'Bệnh viện tỉnh',
+    icon: '🏥',
+    khoangCach: 1.7,
+    thoiGianDiChuyen: 5,
+    danhGia: 4.0,
+    soLuotDanhGia: 670,
+    diaChi: '479 Đường Lương Ngọc Quyến, TP. Thái Nguyên',
+    moTa: 'Bệnh viện đa khoa tỉnh uy tín, phục vụ cấp cứu 24h. Các khoa Nội, Ngoại, Nhi, Sản, Mắt đầy đủ.',
+    mapUrl: mapUrl(21.6005, 105.8530),
+    directionsUrl: dirUrl(21.6005, 105.8530),
+    anhDaiDien: '💊',
+    noiBat: false,
+  },
+
+  // ── ATM / NGÂN HÀNG ───────────────────────────────────────────────
+  {
+    id: 17,
+    ten: 'ATM Vietcombank',
+    loai: 'atm',
+    loaiHienThi: 'ATM / Ngân hàng',
+    icon: '🏧',
+    khoangCach: 0.2,
+    thoiGianDiChuyen: 1,
+    danhGia: 4.0,
+    soLuotDanhGia: 340,
+    diaChi: '10 Đường Hoàng Văn Thụ, TP. Thái Nguyên',
+    moTa: 'ATM Vietcombank hoạt động 24/7. Chấp nhận thẻ Visa, Mastercard, JCB. Rút tiền ngoại tệ được.',
+    mapUrl: mapUrl(21.5935, 105.8463),
+    directionsUrl: dirUrl(21.5935, 105.8463),
+    anhDaiDien: '💳',
+    noiBat: false,
+  },
+  {
+    id: 18,
+    ten: 'Ngân hàng Agribank Chi nhánh Thái Nguyên',
+    loai: 'atm',
+    loaiHienThi: 'Ngân hàng',
+    icon: '🏦',
+    khoangCach: 0.6,
+    thoiGianDiChuyen: 2,
+    danhGia: 4.1,
+    soLuotDanhGia: 290,
+    diaChi: '18 Đường Đội Cấn, TP. Thái Nguyên',
+    moTa: 'Ngân hàng Agribank chi nhánh lớn, có đầy đủ dịch vụ chuyển tiền, đổi ngoại tệ, ATM 24/7.',
+    mapUrl: mapUrl(21.5948, 105.8487),
+    directionsUrl: dirUrl(21.5948, 105.8487),
+    anhDaiDien: '🏦',
+    noiBat: false,
+  },
+  {
+    id: 19,
+    ten: 'ATM BIDV Vincom',
+    loai: 'atm',
+    loaiHienThi: 'ATM / Ngân hàng',
+    icon: '🏧',
+    khoangCach: 1.5,
+    thoiGianDiChuyen: 5,
+    danhGia: 4.2,
+    soLuotDanhGia: 420,
+    diaChi: 'Vincom Plaza, 1 Đường Trường Chinh, TP. Thái Nguyên',
+    moTa: 'ATM BIDV ngay trong Vincom Plaza, hoạt động 24/7. Hạn mức rút cao, giao dịch ổn định.',
+    mapUrl: mapUrl(21.5878, 105.8491),
+    directionsUrl: dirUrl(21.5878, 105.8491),
+    anhDaiDien: '💵',
+    noiBat: false,
+  },
+
+  // ── BẾN XE / GA TÀU ──────────────────────────────────────────────
+  {
+    id: 20,
+    ten: 'Bến xe Trung tâm Thái Nguyên',
+    loai: 'giao-thong',
+    loaiHienThi: 'Bến xe',
+    icon: '🚌',
+    khoangCach: 3.2,
+    thoiGianDiChuyen: 10,
+    danhGia: 3.9,
+    soLuotDanhGia: 560,
+    diaChi: 'Đường Núi Đọ, TP. Thái Nguyên',
+    moTa: 'Bến xe trung tâm tỉnh, có xe đi Hà Nội (Mỹ Đình, Giáp Bát), xe liên tỉnh đi các tỉnh miền Bắc. Chạy từ 5h–20h.',
+    mapUrl: mapUrl(21.5797, 105.8337),
+    directionsUrl: dirUrl(21.5797, 105.8337),
+    anhDaiDien: '🚍',
+    noiBat: false,
+  },
+  {
+    id: 21,
+    ten: 'Ga Lưu Xá (Ga tàu Thái Nguyên)',
+    loai: 'giao-thong',
+    loaiHienThi: 'Ga tàu hỏa',
+    icon: '🚉',
+    khoangCach: 4.1,
+    thoiGianDiChuyen: 12,
+    danhGia: 3.8,
+    soLuotDanhGia: 380,
+    diaChi: 'Xã Lưu Xá, huyện Đồng Hỷ, Thái Nguyên',
+    moTa: 'Ga tàu hỏa kết nối Thái Nguyên – Hà Nội. Có tàu chạy hàng ngày, tiện lợi và tiết kiệm chi phí.',
+    mapUrl: mapUrl(21.5660, 105.8830),
+    directionsUrl: dirUrl(21.5660, 105.8830),
+    anhDaiDien: '🚂',
+    noiBat: false,
+  },
+];
+
+// ─── GET /api/dia-diem/xung-quanh ────────────────────────────────
+router.get('/xung-quanh', (req, res) => {
+  try {
+    const { loai, sort = 'khoang-cach' } = req.query;
+    let result = [...diaDiemXungQuanh];
+
+    if (loai && loai !== 'tat-ca') {
+      result = result.filter(d => d.loai === loai);
+    }
+    if (sort === 'danh-gia') {
+      result.sort((a, b) => b.danhGia - a.danhGia);
+    } else {
+      result.sort((a, b) => a.khoangCach - b.khoangCach);
+    }
+
+    res.json({ success: true, total: result.length, data: result });
+  } catch (err) {
+    console.error('Lỗi lấy địa điểm:', err);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// ─── GET /api/dia-diem/xung-quanh/:id ────────────────────────────
+router.get('/xung-quanh/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const found = diaDiemXungQuanh.find(d => d.id === id);
+  if (!found) return res.status(404).json({ success: false, error: 'Không tìm thấy địa điểm' });
+  res.json({ success: true, data: found });
+});
+
+module.exports = router;

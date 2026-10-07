@@ -1,0 +1,81 @@
+{
+  "hotel_profile": {
+    "name": "Grand Palace Hotel",
+    "location": "Trung tâm Thành phố Thái Nguyên, Việt Nam",
+    "standard": "Khách sạn 5 sao quốc tế",
+    "check_in_time": "14:00",
+    "check_out_time": "12:00",
+    "early_check_in": "Từ 10:00 (phụ phí 50% hoặc miễn phí nếu có phòng sẵn cho khách VIP)",
+    "late_check_out": "Đến 14:00 (miễn phí tùy phòng trống và miễn phí cho khách VIP), từ 14:00-18:00 phụ phí 50%, sau 18:00 tính 1 đêm"
+  },
+  "policies": {
+    "pets": {
+      "allowed": false,
+      "strict_rule": "Grand Palace Hotel TUYỆT ĐỐI KHÔNG cho phép mang bất kỳ loại thú cưng hay động vật nuôi nào vào khuôn viên khách sạn (bao gồm chó, mèo, chim và tất cả các loài động vật khác). Quy định áp dụng nghiêm ngặt cho mọi loài vật nuôi, không phân biệt kích cỡ lớn hay nhỏ, kể cả khi nhốt trong lồng hoặc túi xách.",
+      "penalty_cleaning_fee": 500000,
+      "exception": "Chỉ chấp nhận chó dẫn đường hợp pháp cho người khiếm thị có giấy tờ y tế xác nhận và thông báo trước."
+    },
+    "smoking": {
+      "allowed_in_room": false,
+      "strict_rule": "Khách sạn 100% không hút thuốc trong phòng. CẤM cả thuốc lá truyền thống và thuốc lá điện tử (Vape, Pod, IQOS, Shisha) trong toàn bộ phòng ngủ và không gian kín.",
+      "designated_areas": "Ban công riêng thoáng khí (nếu phòng có ban công) hoặc khu vực sân vườn ngoài trời tầng 1.",
+      "penalty_cleaning_fee": 1000000
+    },
+    "cancellation": {
+      "prior_48h": "Hoàn tiền 100%, không mất phí.",
+      "within_24_to_48h": "Hoàn tiền 50% tổng tiền đặt phòng.",
+      "under_24h_or_no_show": "Hoàn tiền 0% (KHÔNG hoàn tiền, tính phí 100% đêm đầu tiên hoặc toàn bộ tiền cọc). Áp dụng cho mọi trường hợp hủy trước 12 tiếng, 6 tiếng, 2 tiếng...",
+      "force_majeure": "Bệnh tật, thiên tai có chứng từ xác nhận được bảo lưu hoặc đổi ngày miễn phí."
+    }
+  },
+  "facilities": {
+    "infinity_pool": {
+      "name": "Bể bơi vô cực (Infinity Sky Pool)",
+      "location": "Tầng thượng (Rooftop)",
+      "opening_hours": "06:00 - 21:00 hàng ngày",
+      "pricing": "Hoàn toàn miễn phí cho khách lưu trú",
+      "amenities": "Khăn tắm miễn phí, ghế tắm nắng toàn cảnh thành phố, phòng tắm tráng, cứu hộ trực 100% thời gian."
+    },
+    "helipad": {
+      "has_helipad": false,
+      "description": "Khách sạn KHÔNG có bãi đáp trực thăng trên tầng thượng. Tầng thượng là khu vực dành riêng cho Bể bơi vô cực và Sky Lounge.",
+      "vip_transport": "Khách VIP đi trực thăng/chuyên cơ cá nhân sẽ hạ cánh tại sân bay quốc tế hoặc sân bay quân sự gần nhất; khách sạn bố trí xe Limousine đón tiễn riêng về khách sạn."
+    },
+    "sky_lounge": {
+      "name": "Sky Lounge & Rooftop Bar",
+      "location": "Tầng thượng",
+      "opening_hours": "16:00 - 23:30",
+      "services": "Cocktail, rượu vang cao cấp, nhạc acoustic cuối tuần, ngắm hoàng hôn và view toàn cảnh."
+    }
+  },
+  "services": {
+    "limousine_airport": {
+      "vehicle_type": "Limousine Dcar VIP 9 chỗ",
+      "price_pickup": "850.000 VNĐ / chuyến (từ sân bay về khách sạn)",
+      "price_dropoff": "800.000 VNĐ / chuyến (từ khách sạn ra sân bay)",
+      "price_roundtrip": "1.500.000 VNĐ / 2 chiều khứ hồi",
+      "included": "Tài xế đón tận sảnh với biển tên, nước suối, khăn lạnh, wifi tốc độ cao, cổng sạc USB, phí cầu đường bến bãi.",
+      "notice_required": "Đặt trước tối thiểu 2 đến 3 tiếng."
+    },
+    "spa_massage": {
+      "brand": "Royal Spa",
+      "hot_stone_massage": "Gói 60 phút (650.000 VNĐ) hoặc 90 phút (900.000 VNĐ) với đá nóng bazan tự nhiên.",
+      "other_services": "Massage tinh dầu thảo dược, massage chân bấm huyệt, xông hơi khô (Sauna), xông hơi ướt (Steam bath).",
+      "mud_bath_clarification": "Khách sạn KHÔNG có dịch vụ bồn tắm bùn khoáng tại chỗ trong khuôn viên; Tour Desk hỗ trợ đặt tour trọn gói tắm bùn khoáng thiên nhiên tại các khu suối khoáng lân cận có xe đưa đón."
+    }
+  },
+  "frequently_asked": {
+    "paris_france_flight": {
+      "capital": "Paris",
+      "flight_time": "Bay thẳng từ Việt Nam (Hà Nội/TP.HCM) sang Paris (sân bay Charles de Gaulle - CDG) mất khoảng 12 - 14 tiếng; bay quá cảnh (transit 1 điểm dừng) mất 16 - 22 tiếng.",
+      "hotel_support": "Khách sạn có dịch vụ xe đưa đón sân bay 24/7 và hỗ trợ đặt vé máy bay, tư vấn visa châu Âu tại quầy Concierge."
+    },
+    "hanoi_weather_travel": {
+      "live_tracking": "Hệ thống PMS và màn hình sảnh tích hợp widget thời tiết cập nhật liên tục.",
+      "recommendations": "Trời nắng ráo: dạo Hồ Gươm, Phố Cổ, Văn Miếu; Trời mưa: khách sạn cung cấp ô dù miễn phí, gợi ý tham quan bảo tàng, thưởng thức cà phê hoặc trải nghiệm Royal Spa."
+    },
+    "vingroup_stock": {
+      "support_scope": "Khách sạn chỉ hỗ trợ thông tin lưu trú, dịch vụ phòng và du lịch. KHÔNG cung cấp số liệu biến động giá cổ phiếu Vingroup (VIC) hay chứng khoán thời gian thực. Hướng dẫn khách xem trên bảng điện tử SSI, TCBS, VNDirect..."
+    }
+  }
+}
